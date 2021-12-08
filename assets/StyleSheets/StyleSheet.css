@@ -1,0 +1,25 @@
+header>aside{
+    color: #FFFCFC;
+}
+body{
+    color: #0000FF;
+}
+main>section#Home_Page_section>section{
+    color: #FFFCFC;
+}
+main>section>section>p{
+    color: blue;
+    background-color: white;
+}
+#About_Me_Section>section>div:nth-child(2)>div>p{
+    color: black;
+}
+#Services_section>div>blockquote{
+    color: black;
+}
+#Services_section>div>cite{
+    color: black;
+}
+footer{
+    color: black;
+}
