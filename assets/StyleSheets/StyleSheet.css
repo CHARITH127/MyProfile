@@ -57,6 +57,7 @@ footer {
 
 #Home_Page_section {
     background-color: #1E90FF;
+    height: 100vh;
 }
 
 /*===============================================================header===============================================*/
@@ -93,3 +94,14 @@ header>aside>ul>li{
     color: rgb(0, 0, 255);
     height: 9vh;
 }
+/*================================================Home Page Picture===================================================*/
+.Home_Page_picture{
+    font-family: "Public Sans";
+    color: #0000FF;
+    position: absolute;
+    margin: auto;
+    right: 10vw;
+    height: 96vh;
+    bottom: -1.5vh;
+}
+/*================================================Home Page Text======================================================*/
