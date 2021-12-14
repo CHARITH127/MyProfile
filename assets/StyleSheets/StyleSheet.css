@@ -1,47 +1,95 @@
-header>aside{
-    color: #FFFCFC;
-}
 body{
-    font-family:"Public Sans" ;
+    font-family: "Public Sans";
     color: #0000FF;
+    margin: 0;
 }
-main>section#Home_Page_section>section{
+header > aside {
     color: #FFFCFC;
 }
-main>section>section>p{
+main > section#Home_Page_section > section {
+    color: #FFFCFC;
+}
+
+main > section > section > p {
     color: blue;
 
 }
-#About_Me_Section>section>div:nth-child(2)>div>p{
+
+#About_Me_Section > section > div:nth-child(2) > div > p {
     color: black;
 }
-#Services_section>div>blockquote{
+
+#Services_section > div > blockquote {
     color: black;
 }
-#Services_section>div>cite{
+
+#Services_section > div > cite {
     color: black;
 }
-main>section:nth-child(3)>h2{
+
+main > section:nth-child(3) > h2 {
     color: black;
 }
-main>section:nth-child(3)>p{
+
+main > section:nth-child(3) > p {
     color: blue;
 }
-main>section:nth-child(4)>h2{
+
+main > section:nth-child(4) > h2 {
     color: black;
 }
-main>section:nth-child(4)>p{
+
+main > section:nth-child(4) > p {
     color: blue;
 }
-main>section:nth-child(5)>h2{
+
+main > section:nth-child(5) > h2 {
     color: black;
 }
-main>section:nth-child(5)>p{
+
+main > section:nth-child(5) > p {
     color: blue;
 }
-footer{
+
+footer {
     color: black;
 }
-#Home_Page_section{
-    background-color:#1E90FF ;
+
+#Home_Page_section {
+    background-color: #1E90FF;
+}
+
+/*===============================================================header===============================================*/
+header{
+    font-family: "Public Sans";
+    color: #417bee;
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+}
+header>aside>ul{
+    font-family: "Public Sans";
+    color: #fffcfc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header>aside>ul>li{
+    list-style: none;
+    display: inline;
+    margin-right: 1.5vw;
+    color: white;
+}
+.link{
+    font-family: "Public Sans";
+    list-style: none;
+    color: white;
+    font-size: 2vh;
+    text-decoration-line: none;
+}
+.logo{
+    font-family: "Public Sans";
+    color: rgb(0, 0, 255);
+    height: 9vh;
 }
