@@ -64,7 +64,7 @@ footer {
 header{
     font-family: "Public Sans";
     color: #417bee;
-    position: fixed;
+    position: absolute;
     width: 100vw;
     height: 5vh;
 }
@@ -105,3 +105,12 @@ header>aside>ul>li{
     bottom: -1.5vh;
 }
 /*================================================Home Page Text======================================================*/
+#Home_Page_Text_Content{
+    box-sizing: border-box;
+    border: 2px solid red;
+    position: absolute;
+    width: 30vw;
+    top: 36vh;
+    left: 15vw;
+    color: white;
+}
