@@ -64,9 +64,10 @@ footer {
 header{
     font-family: "Public Sans";
     color: #417bee;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 5vh;
+    z-index: 100;
 }
 header>aside>ul{
     font-family: "Public Sans";
