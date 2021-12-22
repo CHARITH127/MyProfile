@@ -1,11 +1,13 @@
-body{
+body {
     font-family: "Public Sans";
     color: #0000FF;
     margin: 0;
 }
+
 header > aside {
     color: #FFFCFC;
 }
+
 main > section#Home_Page_section > section {
     color: #FFFCFC;
 }
@@ -61,7 +63,7 @@ footer {
 }
 
 /*===============================================================header===============================================*/
-header{
+header {
     font-family: "Public Sans";
     color: #417bee;
     position: fixed;
@@ -69,7 +71,8 @@ header{
     height: 5vh;
     z-index: 100;
 }
-header>aside>ul{
+
+header > aside > ul {
     font-family: "Public Sans";
     color: #fffcfc;
     position: absolute;
@@ -77,26 +80,29 @@ header>aside>ul{
     right: 0;
 }
 
-header>aside>ul>li{
+header > aside > ul > li {
     list-style: none;
     display: inline;
     margin-right: 1.5vw;
     color: white;
 }
-.link{
+
+.link {
     font-family: "Public Sans";
     list-style: none;
     color: white;
     font-size: 2vh;
     text-decoration-line: none;
 }
-.logo{
+
+.logo {
     font-family: "Public Sans";
     color: rgb(0, 0, 255);
     height: 9vh;
 }
+
 /*================================================Home Page Picture===================================================*/
-.Home_Page_picture{
+.Home_Page_picture {
     font-family: "Public Sans";
     color: #0000FF;
     position: absolute;
@@ -105,13 +111,75 @@ header>aside>ul>li{
     height: 96vh;
     bottom: -1.5vh;
 }
+
 /*================================================Home Page Text======================================================*/
-#Home_Page_Text_Content{
+#Home_Page_Text_Content {
     box-sizing: border-box;
-    border: 2px solid red;
     position: absolute;
-    width: 30vw;
-    top: 36vh;
+    width: 42vw;
+    top: 27vh;
     left: 15vw;
     color: white;
+}
+
+/*hi there*/
+#Home_Page_Text_Content > p:nth-child(1) {
+    font-family: 'PT Serif', serif;
+    border-radius: 5px;
+    height: 3vh;
+    margin-right: 34vw;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5vh;
+    font-style: normal;
+    font-weight: bold;
+    background-color: white;
+    color: #3f6fff;
+}
+
+#Home_Page_Text_Content h1 {
+    font-family: "Public Sans";
+    color: white;
+    font-size: 4em;
+    font-style: normal;
+    margin: 0px;
+}
+
+#Home_Page_Text_Content blockquote {
+    font-family: "Public Sans";
+    color: white;
+    width: 36vw;
+    font-size: 2em;
+    font-style: normal;
+    margin-left: 0;
+}
+
+#Home_Page_Text_Content cite {
+    font-family: "Public Sans";
+    color: white;
+    font-size: 2em;
+    font-style: normal;
+}
+
+#naigationsIcons{
+    margin: 1vw;
+}
+#naigationsIcons img{
+    height: 5vh;
+    margin-left:0.5vw;
+}
+
+#downloadCvButten>button{
+    margin-top: 1vh;
+    height: 4vh;
+    width: 11vw;
+    border: none;
+    font-family: "Public Sans";
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 20vh;
+    background-color: white;
+    color: #2f2fee;
+    cursor: pointer;
 }
