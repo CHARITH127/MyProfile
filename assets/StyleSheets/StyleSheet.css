@@ -29,9 +29,6 @@ main > section > section > p {
     color: black;
 }
 
-main > section:nth-child(3) > h2 {
-    color: black;
-}
 
 main > section:nth-child(3) > p {
     color: blue;
@@ -60,6 +57,14 @@ footer {
 #Home_Page_section {
     background-color: #1E90FF;
     height: 100vh;
+}
+/*skill levels bars container*/
+.containerBar{
+    border: 2px solid red;
+    position: absolute;
+    height: 1.5vh;
+    width: 24vw;
+    border-radius: 20px;
 }
 
 /*===============================================================header===============================================*/
@@ -162,15 +167,16 @@ header > aside > ul > li {
     font-style: normal;
 }
 
-#naigationsIcons{
+#naigationsIcons {
     margin: 1vw;
 }
-#naigationsIcons img{
+
+#naigationsIcons img {
     height: 5vh;
-    margin-left:0.5vw;
+    margin-left: 0.5vw;
 }
 
-#downloadCvButten>button{
+#downloadCvButten > button {
     margin-top: 1vh;
     height: 4vh;
     width: 11vw;
@@ -183,27 +189,26 @@ header > aside > ul > li {
     color: #2f2fee;
     cursor: pointer;
 }
-/*================================================About Me Page Text==================================================*/
-#About_Me_Section{
-    background-color: aquamarine;
-    height: 100vh;
-}
 
-#aboutMePageImage{
+/*================================================About Me Page Text==================================================*/
+
+#aboutMePageImage {
     position: relative;
     top: 0px;
     left: 12vw;
     height: 100vh;
 }
+
 /*about me text*/
-#About_Me_Section section>div:nth-child(1){
+#About_Me_Section section > div:nth-child(1) {
     position: absolute;
     top: 103vh;
     right: 18vw;
     width: 34vw;
 }
+
 /*header in about me*/
-#AboutMe{
+#AboutMe {
     color: #0000FF;
     font-size: 3em;
     font-style: normal;
@@ -211,15 +216,15 @@ header > aside > ul > li {
 }
 
 /*description of about me page*/
-#About_Me_Section section>div:nth-child(1) p{
+#About_Me_Section section > div:nth-child(1) p {
     font-family: 'PT Serif', serif;
     font-size: 1.4em;
 }
 
 /*header (Education Level)*/
-#About_Me_Section section>div:nth-child(2) h2{
+#About_Me_Section section > div:nth-child(2) h2 {
     font-family: "Public Sans";
-    color: #0000FF;
+    color: #0000ff;
     position: absolute;
     top: 132vh;
     right: 41vw;
@@ -227,7 +232,7 @@ header > aside > ul > li {
 }
 
 /*education level(ijse)*/
-#About_Me_Section section>div:nth-child(2) div:nth-child(2){
+#About_Me_Section section > div:nth-child(2) div:nth-child(2) {
     position: absolute;
     right: 10vw;
     top: 143vh;
@@ -235,8 +240,9 @@ header > aside > ul > li {
     border: 2px solid red;
     border-radius: 2vh;
 }
+
 /*education level(technicle college)*/
-#About_Me_Section section>div:nth-child(2) div:nth-child(3){
+#About_Me_Section section > div:nth-child(2) div:nth-child(3) {
     position: absolute;
     right: 35vw;
     top: 158vh;
@@ -244,8 +250,9 @@ header > aside > ul > li {
     border: 2px solid red;
     border-radius: 2vh;
 }
+
 /*education level(president's college)*/
-#About_Me_Section section>div:nth-child(2) div:nth-child(4){
+#About_Me_Section section > div:nth-child(2) div:nth-child(4) {
     position: absolute;
     right: 10vw;
     top: 173vh;
@@ -253,8 +260,9 @@ header > aside > ul > li {
     border: 2px solid red;
     border-radius: 2vh;
 }
+
 /*education level(verticleLine)*/
-#verticleLine{
+#verticleLine {
     border: 2px solid red;
     border-radius: 20px;
     position: absolute;
@@ -262,4 +270,176 @@ header > aside > ul > li {
     top: 140vh;
     right: 32.5vw;
     background-color: red;
+}
+
+/*===================================================Skill Page ======================================================*/
+#skillPage {
+    height: 87vh;
+}
+
+/*Header(Skills)*/
+#skillPage > h2 {
+    color: #0000ff;
+    margin: 0px;
+}
+
+#Skill {
+    position: absolute;
+    font-style: normal;
+    font-size: 3em;
+    left: 46vw;
+}
+
+/*my skill level*/
+#skillPage p:nth-child(2){
+    position: absolute;
+    top: 209vh;
+    left: 46.5vw;
+    font-size: 1.5em;
+    margin: 0px;
+    margin-top: 1vh;
+}
+/*java tag*/
+#java{
+    margin: 0px;
+    position: absolute;
+    left: 23vw;
+    top: 217vh;
+    font-size: 2em;
+}
+
+/*java icon*/
+.javaIcon{
+    position: absolute;
+    left: 19vw;
+    top: 215.5vh;
+    margin-left: 1.5vw;
+}
+#javaContainer{
+    top: 221vh;
+    left: 20vw;
+}
+/*mysql tag*/
+#mysql{
+    margin: 0px;
+    position: absolute;
+    right: 30vw;
+    top: 217vh;
+    font-size: 2em;
+}
+/*mysql icon*/
+.mySqlIcon{
+    height: 50px;
+    position: absolute;
+    right: 34vw;
+    top: 215.5vh;
+    margin-right: 0.5vw;
+}
+
+#mysqlContainer{
+    top: 221vh;
+    right: 14vw;
+}
+
+/*javaScript tag*/
+#javaScript{
+    margin: 0px;
+    position: absolute;
+    left: 23vw;
+    top: 232vh;
+    font-size: 2em;
+}
+/*java Script icon*/
+.javaScriptIcon{
+    height: 50px;
+    position: absolute;
+    left: 21vw;
+    top: 231vh;
+    margin-left: -0.5vw;
+}
+#javaScriptContiner{
+    top: 237vh;
+    left: 20vw;
+}
+
+/*javafx tag*/
+#javafx{
+    margin: 0px;
+    position: absolute;
+    right: 29vw;
+    top: 232vh;
+    font-size: 2em;
+}
+/*java fx icon*/
+.javafxIcon{
+    height: 50px;
+    position: absolute;
+    right: 34vw;
+    top: 231vh;
+    margin-right: 1vw;
+}
+
+#javaFxContainer{
+    top: 237vh;
+    right: 14vw;
+}
+
+/*php tag*/
+#php{
+    margin: 0px;
+    position: absolute;
+    left: 23vw;
+    top: 251vh;
+    font-size: 2em;
+}
+.phpIcon{
+    height: 50px;
+    position: absolute;
+    left: 20vw;
+    top: 250vh;
+    margin-right: 0.5vw;
+}
+#phpContainer{
+    top: 256vh;
+    left: 20vw;
+}
+
+/*html 5 tag*/
+#html{
+    margin: 0px;
+    position: absolute;
+    right: 30vw;
+    top: 251vh;
+    font-size: 2em;
+}
+.htmIcon{
+    height: 50px;
+    position: absolute;
+    right: 34vw;
+    top: 250vh;
+    margin-right: 0.5vw;
+}
+#htmlContainer{
+    top: 256vh;
+    right: 14vw;
+}
+
+/*css tag*/
+#css{
+    margin: 0px;
+    position: absolute;
+    left: 23vw;
+    top: 274vh;
+    font-size: 2em;
+}
+.cssIcon{
+    height: 50px;
+    position: absolute;
+    left: 20vw;
+    top: 273vh;
+    margin-right: 0.5vw;
+}
+#cssContainer{
+    top: 280vh;
+    left: 20vw;
 }
