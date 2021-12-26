@@ -445,12 +445,12 @@ header > aside > ul > li {
 }
 /*===================================================Service Page ====================================================*/
 #Services_section{
-    height: 100vh;
     position: relative;
 }
 .Slider{
     display: flex;
     flex-direction: row;
+
 }
 /*header (Services)*/
 #Services{
@@ -468,8 +468,6 @@ header > aside > ul > li {
 }
 /*UI/Ux development main div*/
 #UI\/UX_Development{
-/*    width: 354px;
-    height: 569px;*/
     border: 2px solid red;
     flex-grow: 1;
 }
@@ -497,8 +495,7 @@ header > aside > ul > li {
 }
 /*WebDevelopment development main div*/
 #Web_Development{
-/*    width: 354px;
-    height: 569px;*/
+
     border: 2px solid red;
     flex-grow: 1;
 }
@@ -527,7 +524,71 @@ header > aside > ul > li {
 }
 /*Mobile development main div */
 #Mobile_Development{
-/*    height: 569px;*/
     border: 2px solid red;
     flex-grow: 1;
+}
+/*Mobile development main div--> image*/
+#Mobile_Development>img:nth-child(1){
+    height: 211px;
+    margin-top: 25px;
+    margin-bottom: 19px;
+    margin-left: 12px;
+}
+/* Mobile  development main div--> heading*/
+#Mobile_Development>h3:nth-child(2){
+    margin-bottom: 19px;
+    font-size: 3em;
+    margin-top: 23px;
+    margin-left: 12px;
+}
+/* Mobile  development main div--> blockquate*/
+#Mobile_Development>blockquote:nth-child(3){
+    margin-left: 12px;
+}
+/* Mobile  development main div--> cite*/
+#Mobile_Development>cite:nth-child(4){
+    margin-left: 12px;
+}
+
+/*===================================================Projects Page ===================================================*/
+#Projects_Section{
+    position: relative;
+}
+/*heading tag*/
+#Projects{
+    position: relative;
+    font-style: normal;
+    font-size: 3em;
+    left: 44vw;
+    color: #0000ff;
+}
+/*project that i had created*/
+#Projects_Section>p:nth-child(2){
+    position:absolute;
+    left: 48vw;
+    top: 64px;
+}
+/*image-->clinicSystem*/
+#Projects_Section>section:nth-child(3)>img:nth-child(1){
+    position: relative;
+    left: 447px;
+    top: 52px;
+    height: 344px;
+    width: 389px;
+}
+/*image-->WholeSaleSystem*/
+#Projects_Section>section:nth-child(3)>img:nth-child(2){
+    position: relative;
+    left: 550px;
+    top: 52px;
+    height: 344px;
+    width: 389px;
+}
+/*div --> viewMore*/
+#Projects_Section>section:nth-child(3)>div:nth-child(3){
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    top: 68px;
+    left: 850px;
 }
