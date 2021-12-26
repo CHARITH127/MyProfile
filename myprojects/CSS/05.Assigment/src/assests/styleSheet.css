@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+
+}
+section {
+    position: relative;
+    height: 550px;
+    width: 207px;
+    top: 125px;
+    display: flex;
+    flex-direction: column;
+    right: 154px;
+
+}
+
+section > div {
+    left: 0;
+    height: 41px;
+    background-color: deeppink;
+    margin-top: 51px;
+    position: relative;
+    transition: all 3s;
+}
+section > div:hover{
+    left: 151px;
+    transition: all 3s;
+}
+
+section>div>h3{
+    position: relative;
+    margin: 0px;
+    margin-top: 11px;
+}
+
+section>div>i:nth-child(2){
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 27px;
+}

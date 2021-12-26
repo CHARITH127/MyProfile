@@ -60,7 +60,7 @@ footer {
 }
 /*skill levels bars container*/
 .containerBar{
-    border: 2px solid red;
+    border: 5px solid red;
     position: absolute;
     height: 1.5vh;
     width: 24vw;
@@ -442,4 +442,92 @@ header > aside > ul > li {
 #cssContainer{
     top: 280vh;
     left: 20vw;
+}
+/*===================================================Service Page ====================================================*/
+#Services_section{
+    height: 100vh;
+    position: relative;
+}
+.Slider{
+    display: flex;
+    flex-direction: row;
+}
+/*header (Services)*/
+#Services{
+    position: relative;
+    font-style: normal;
+    font-size: 3em;
+    left: 44vw;
+    color: #0000ff;
+}
+/*Services that i provided*/
+#Services_section p{
+    position:absolute;
+    left: 48vw;
+    top: 50px;
+}
+/*UI/Ux development main div*/
+#UI\/UX_Development{
+/*    width: 354px;
+    height: 569px;*/
+    border: 2px solid red;
+    flex-grow: 1;
+}
+
+/*UI/Ux development main div--> image*/
+#UI\/UX_Development>img:nth-child(1){
+    height: 211px;
+    margin-top: 25px;
+    margin-bottom: 19px;
+}
+/*UI/Ux development main div--> heading*/
+#UI\/UX_Development>h3:nth-child(2){
+    margin-bottom: 19px;
+    font-size: 3em;
+    margin-top: 23px;
+    margin-left: 12px;
+}
+/*UI/Ux development main div--> blockquate*/
+#UI\/UX_Development>blockquote:nth-child(3){
+    margin-left: 12px;
+}
+/*UI/Ux development main div--> cite*/
+#UI\/UX_Development>cite:nth-child(4){
+    margin-left: 12px;
+}
+/*WebDevelopment development main div*/
+#Web_Development{
+/*    width: 354px;
+    height: 569px;*/
+    border: 2px solid red;
+    flex-grow: 1;
+}
+/*Web development main div--> image*/
+#Web_Development>img:nth-child(1){
+    height: 211px;
+    margin-top: 25px;
+    margin-bottom: 19px;
+    margin-left: 12px;
+}
+
+/* Web development main div--> heading*/
+#Web_Development>h3:nth-child(2){
+    margin-bottom: 19px;
+    font-size: 3em;
+    margin-top: 23px;
+    margin-left: 12px;
+}
+/*Web development main div--> blockquate*/
+#Web_Development>blockquote:nth-child(3){
+    margin-left: 12px;
+}
+/*Web development main div--> cite*/
+#Web_Development>cite:nth-child(4){
+    margin-left: 12px;
+}
+/*Mobile development main div */
+#Mobile_Development{
+/*    height: 569px;*/
+    border: 2px solid red;
+    flex-grow: 1;
 }
