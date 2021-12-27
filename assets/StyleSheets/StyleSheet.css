@@ -287,14 +287,14 @@ header > aside > ul > li {
     position: absolute;
     font-style: normal;
     font-size: 3em;
-    left: 46vw;
+    left: 45vw;
 }
 
 /*my skill level*/
 #skillPage p:nth-child(2){
     position: absolute;
-    top: 209vh;
-    left: 46.5vw;
+    top: 206vh;
+    left: 45.5vw;
     font-size: 1.5em;
     margin: 0px;
     margin-top: 1vh;
@@ -450,6 +450,8 @@ header > aside > ul > li {
 .Slider{
     display: flex;
     flex-direction: row;
+    padding-left: 19vw;
+    padding-right: 10vw;
 
 }
 /*header (Services)*/
@@ -457,19 +459,21 @@ header > aside > ul > li {
     position: relative;
     font-style: normal;
     font-size: 3em;
-    left: 44vw;
+    left: 42vw;
     color: #0000ff;
 }
 /*Services that i provided*/
 #Services_section p{
-    position:absolute;
-    left: 48vw;
+    position: absolute;
+    left: 45vw;
     top: 50px;
 }
 /*UI/Ux development main div*/
 #UI\/UX_Development{
-    border: 2px solid red;
     flex-grow: 1;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 20vw;
 }
 
 /*UI/Ux development main div--> image*/
@@ -495,9 +499,10 @@ header > aside > ul > li {
 }
 /*WebDevelopment development main div*/
 #Web_Development{
-
-    border: 2px solid red;
     flex-grow: 1;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 23vw;
 }
 /*Web development main div--> image*/
 #Web_Development>img:nth-child(1){
@@ -524,8 +529,10 @@ header > aside > ul > li {
 }
 /*Mobile development main div */
 #Mobile_Development{
-    border: 2px solid red;
     flex-grow: 1;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    width: 23vw;
 }
 /*Mobile development main div--> image*/
 #Mobile_Development>img:nth-child(1){
@@ -559,13 +566,13 @@ header > aside > ul > li {
     position: relative;
     font-style: normal;
     font-size: 3em;
-    left: 44vw;
+    left: 43vw;
     color: #0000ff;
 }
 /*project that i had created*/
 #Projects_Section>p:nth-child(2){
-    position:absolute;
-    left: 48vw;
+    position: absolute;
+    left: 45vw;
     top: 64px;
 }
 /*image-->clinicSystem*/
