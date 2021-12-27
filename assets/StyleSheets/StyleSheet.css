@@ -273,176 +273,159 @@ header > aside > ul > li {
 }
 
 /*===================================================Skill Page ======================================================*/
-#skillPage {
-    height: 87vh;
-}
-
-/*Header(Skills)*/
-#skillPage > h2 {
-    color: #0000ff;
-    margin: 0px;
-}
-
 #Skill {
     position: absolute;
     font-style: normal;
     font-size: 3em;
     left: 45vw;
+    top: 200vh;
 }
 
-/*my skill level*/
-#skillPage p:nth-child(2){
-    position: absolute;
-    top: 206vh;
-    left: 45.5vw;
-    font-size: 1.5em;
-    margin: 0px;
-    margin-top: 1vh;
+/*!*my skill level*!*/
+ #skillPage p:nth-child(2){
+     position: absolute;
+     top: 206vh;
+     left: 45.5vw;
+     font-size: 1.5em;
+     margin: 0px;
+     margin-top: 1vh;
+ }
+.skill li h3{
+    display: inline;
 }
-/*java tag*/
-#java{
-    margin: 0px;
-    position: absolute;
-    left: 23vw;
-    top: 217vh;
-    font-size: 2em;
+.skill li i{
+    margin-right: 9px;
+    color: #0000FF;
+    font-size: 20px;
 }
-
-/*java icon*/
-.javaIcon{
-    position: absolute;
-    left: 19vw;
-    top: 215.5vh;
-    margin-left: 1.5vw;
-}
-#javaContainer{
-    top: 221vh;
-    left: 20vw;
-}
-/*mysql tag*/
-#mysql{
-    margin: 0px;
-    position: absolute;
-    right: 30vw;
-    top: 217vh;
-    font-size: 2em;
-}
-/*mysql icon*/
-.mySqlIcon{
-    height: 50px;
-    position: absolute;
-    right: 34vw;
-    top: 215.5vh;
-    margin-right: 0.5vw;
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    list-style: none;
+    margin-top: 97px;
 }
 
-#mysqlContainer{
-    top: 221vh;
-    right: 14vw;
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+
+}
+.bar{
+    background: #9d9df6;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
 }
 
-/*javaScript tag*/
-#javaScript{
-    margin: 0px;
-    position: absolute;
-    left: 23vw;
-    top: 232vh;
-    font-size: 2em;
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 }
-/*java Script icon*/
-.javaScriptIcon{
-    height: 50px;
-    position: absolute;
-    left: 21vw;
-    top: 231vh;
-    margin-left: -0.5vw;
-}
-#javaScriptContiner{
-    top: 237vh;
-    left: 20vw;
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(107, 135, 220) 0%, rgb(12, 34, 255) 100%);
+
 }
 
-/*javafx tag*/
-#javafx{
-    margin: 0px;
-    position: absolute;
-    right: 29vw;
-    top: 232vh;
-    font-size: 2em;
-}
-/*java fx icon*/
-.javafxIcon{
-    height: 50px;
-    position: absolute;
-    right: 34vw;
-    top: 231vh;
-    margin-right: 1vw;
+.Java{
+    width: 90%;
+    animation: Java 3s;
 }
 
-#javaFxContainer{
-    top: 237vh;
-    right: 14vw;
+@keyframes Java {
+    from{
+       width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+.Mysql{
+    width: 70%;
+    animation: Mysql 3s;
+
+}
+@keyframes Mysql {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+.JavaScript{
+    width: 3%;
+    animation: JavaScript 3s;
+
+}
+@keyframes JavaScript {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 3%;
+    }
+}
+.JavaFX{
+    width: 95%;
+    animation: JavaFX 3s;
+
+}
+@keyframes JavaFX {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
+}
+.PHP{
+    width: 3%;
+    animation: PHP 3s;
+
+}
+@keyframes PHP {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 3%;
+    }
+}
+.HTML5{
+    width: 80%;
+    animation: HTML5 3s;
+
+}
+@keyframes HTML5 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+.CSS{
+    width: 85%;
+    animation: CSS 3s;
+
+}
+@keyframes CSS {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
 }
 
-/*php tag*/
-#php{
-    margin: 0px;
-    position: absolute;
-    left: 23vw;
-    top: 251vh;
-    font-size: 2em;
-}
-.phpIcon{
-    height: 50px;
-    position: absolute;
-    left: 20vw;
-    top: 250vh;
-    margin-right: 0.5vw;
-}
-#phpContainer{
-    top: 256vh;
-    left: 20vw;
-}
-
-/*html 5 tag*/
-#html{
-    margin: 0px;
-    position: absolute;
-    right: 30vw;
-    top: 251vh;
-    font-size: 2em;
-}
-.htmIcon{
-    height: 50px;
-    position: absolute;
-    right: 34vw;
-    top: 250vh;
-    margin-right: 0.5vw;
-}
-#htmlContainer{
-    top: 256vh;
-    right: 14vw;
-}
-
-/*css tag*/
-#css{
-    margin: 0px;
-    position: absolute;
-    left: 23vw;
-    top: 274vh;
-    font-size: 2em;
-}
-.cssIcon{
-    height: 50px;
-    position: absolute;
-    left: 20vw;
-    top: 273vh;
-    margin-right: 0.5vw;
-}
-#cssContainer{
-    top: 280vh;
-    left: 20vw;
-}
 /*===================================================Service Page ====================================================*/
 #Services_section{
     position: relative;
