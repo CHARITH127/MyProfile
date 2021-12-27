@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
 </head>
 <body>
 <header>
@@ -226,7 +227,8 @@
 </main>
 <footer>
     <section>
-        <h3><dfn id="ContactMe">Have Question ? </dfn><br> W.Charith Wishvajtih</h3>
+        <h3><dfn id="ContactMe">Any Questions ? </dfn></h3>
+        <h3> W.Charith Wishvajtih</h3>
         <section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1281.0453671159019!2d79.9853452!3d7.1113794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fba0252df18f%3A0x95950b113630c447!2zN8KwMDYnNDEuMCJOIDc5wrA1OScwOC42IkU!5e1!3m2!1sen!2slk!4v1637982963613!5m2!1sen!2slk"
                     width="600" height="450" style="border:0px;" allowfullscreen="" loading="lazy">
@@ -237,20 +239,16 @@
             <div>
                 <form action="">
                     <fieldset>
-                        <lable for="name">Name</lable>
                         <input id="name" type="text" placeholder="Name">
-                        <lable for="email">Email</lable>
                         <input id="email" type="text" placeholder="Email"><br>
-                        <lable for="subject">Subject</lable>
                         <input id="subject" type="text" placeholder="Subject"><br>
-                        <labele for="message">Create message here</labele>
                         <textarea id="message" placeholder="Create message here"></textarea>
                     </fieldset>
 
                 </form>
             </div>
             <div>
-                <button>SEND MESSAGE</button>
+                <button id="messageSendButten">SEND MESSAGE</button>
             </div>
         </section>
     </section>
@@ -289,17 +287,15 @@
             </nav>
         </div>
         <div>
-            <h4><a href="#Services">Services</a></h4>
+            <h4><a class="footerServices" href="#Services">Services</a></h4>
             <ul>
-                <img src="assets/icons/arrow.png" height="25" alt="arrow_image">
-                <li>UI/UX Development</li>
-                <img src="assets/icons/arrow.png" height="25" alt="arrow_image">
-                <li>Web Development</li>
-                <img src="assets/icons/arrow.png" height="25" alt="arrow_image">
-                <li>Mobile App Development</li>
+                <li><i class="fas fa-arrow-right"></i>UI/UX Development</li>
+                <li><i class="fas fa-arrow-right"></i>Web Development</li>
+                <li><i class="fas fa-arrow-right"></i>Mobile App Development</li>
             </ul>
         </div>
         <div>
+            <h4>Contact Me</h4>
             <img src="assets/icons/map.png" height="30" alt="map_image">
             <pre>
                 No:321/3,
@@ -308,11 +304,12 @@
                 Sri Lanka.
             </pre>
             <img src="assets/icons/telegram.png" height="30" alt="telegram_image">
-            <p><a href="tel:+94703410462"> +94703410462</a></p>
+            <p><a class="contactNumber" href="tel:+94703410462"> +94703410462</a></p>
             <img src="assets/icons/gmail.png" height="30" alt="gmail_image">
-            <p><a href="mailto:charithrullz993@gmail.com">charithrullz993@gmail.com</a></p>
+            <p><a class="gmailaddress" href="mailto:charithrullz993@gmail.com">charithrullz993@gmail.com</a></p>
         </div>
     </section>
+    <small> <i class="far fa-copyright"></i> 2021 | All rights reserved | This site design and develop by C.Wishvajith</small>
 </footer>
 </body>
 </html>

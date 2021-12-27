@@ -592,3 +592,235 @@ header > aside > ul > li {
     top: 68px;
     left: 850px;
 }
+/*===================================================Page Footer =====================================================*/
+footer{
+    position: relative;
+    background-color: aqua;
+    top: 65px;
+}
+footer>section{
+     position: relative;
+ }
+/*heading*/
+footer>section:nth-child(1)>h3:nth-child(1){
+    position: absolute;
+    left: 617px;
+    top: 0px;
+    font-style: normal;
+    font-size: 3em;
+    margin: 0;
+}
+dfn{
+    font-style: normal;
+}
+/*w.c.wishvajith*/
+footer>section:nth-child(1)>h3:nth-child(2){
+    position: absolute;
+    left: 619px;
+    top: 28px;
+}
+/*iframe*/
+footer>section:nth-child(1)>section:nth-child(3){
+    position: relative;
+    top: 0px;
+}
+/*form main section*/
+footer>section:nth-child(1)>section:nth-child(4){
+    position: absolute;
+    left: 610px;
+    top: 70px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+}
+footer>section>section:nth-child(4)>div:nth-child(1){
+    width: max-content;
+}
+form{
+    width: max-content;
+}
+fieldset{
+    border: none;
+    margin-left: -14px;
+    width: max-content;
+    margin-right: 0px;
+    padding-right: 0;
+}
+/*feildset name input*/
+#name{
+    height: 63px;
+    width: 295px;
+    border: none;
+    border-radius: 30px;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+/*feildset email input*/
+#email{
+    height: 63px;
+    width: 696px;
+    border: none;
+    border-radius: 30px;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+/*feildset supject input*/
+#subject{
+    height: 63px;
+    width: 1037px;
+    border: none;
+    border-radius: 30px;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+/*fieldset message input */
+#message{
+    height: 114px;
+    width: 1037px;
+    border: none;
+    border-radius: 30px;
+    font-size: 23px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 23px;
+}
+#messageSendButten{
+    margin-top: 8px;
+    width: 322px;
+    height: 56px;
+    border-radius: 26px;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+/*bottom of the page*/
+footer>section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+
+}
+/*main divs of the footer section */
+footer>section:nth-child(2)>div{
+    height: max-content;
+}
+/*Description heading*/
+footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    font-size: 23px;
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+/*Description*/
+footer>section:nth-child(2)>div:nth-child(1)>pre:nth-child(2){
+    margin-left: -116px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+/*NAVIGATIONS*/
+footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3){
+    margin-left: 8px;
+}
+
+/*services main div*/
+footer>section:nth-child(2)>div:nth-child(2){
+    position: relative;
+    left: 233px;
+}
+/*Services*/
+footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+.footerServices{
+    font-family: "Public Sans";
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2){
+    list-style: none;
+}
+footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    margin-bottom: 3px;
+}
+/*icons of services*/
+.fas{
+    margin-right: 23px;
+    color: blue;
+}
+
+/*contact me main div*/
+footer>section:nth-child(2)>div:nth-child(3){
+    position: relative;
+    left: 630px;
+    height: 244px;
+}
+/*contact me*/
+footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 23px;
+}
+
+/*pre text of contact me*/
+footer>section:nth-child(2)>div:nth-child(3)>pre:nth-child(3){
+    position: absolute;
+    top: 16px;
+    right: 103px;
+}
+/*telegram image*/
+footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+    height: 30px;
+    position: absolute;
+    top: 97px;
+    right: 190px;
+}
+/*contact number*/
+footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5) {
+    position: absolute;
+    top: 86px;
+    padding-left: 37px;
+    width: max-content;
+    left: 1px;
+}
+.contactNumber{
+    text-decoration: none;
+    color: black;
+}
+
+/*gmail icon*/
+footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+    height: 30px;
+    position: absolute;
+    top: 140px;
+    right: 186px;
+}
+/*gmail address*/
+footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    position: relative;
+    bottom: -63px;
+    padding-left: 40px;
+}
+.gmailaddress{
+    text-decoration: none;
+    color: black;
+}
+
+/*small*/
+small{
+    position: relative;
+    left: 43vw;
+}
