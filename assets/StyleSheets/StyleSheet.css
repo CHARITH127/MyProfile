@@ -55,7 +55,7 @@ footer {
 }
 
 #Home_Page_section {
-    background-color: #1E90FF;
+    background-color: #1e90ff;
     height: 100vh;
 }
 /*skill levels bars container*/
@@ -121,7 +121,6 @@ header > aside > ul > li {
 #Home_Page_Text_Content {
     box-sizing: border-box;
     position: absolute;
-    width: 42vw;
     top: 27vh;
     left: 15vw;
     color: white;
@@ -141,6 +140,7 @@ header > aside > ul > li {
     font-weight: bold;
     background-color: white;
     color: #3f6fff;
+    width: 137px;
 }
 
 #Home_Page_Text_Content h1 {
@@ -149,6 +149,63 @@ header > aside > ul > li {
     font-size: 4em;
     font-style: normal;
     margin: 0px;
+}
+
+.animatedText{
+    height:66.03px ;
+    overflow:hidden ;
+}
+.animatedText div{
+    animation: 9s typingOrder;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+/*animated text*/
+.animatedText span{
+    position: relative;
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+.animatedText span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 102%;
+    border-left:2px solid black ;
+    right:-2px;
+    background-color: #1e90ff;
+    animation: 3s typingText;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+@keyframes typingText {
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes typingOrder {
+    0%{
+        margin-top: 0;
+    }
+    33.333%{
+        margin-top: -66.03px;
+    }
+    66.666%{
+        margin-top: -132.06px;
+    }
+    100%{
+        margin-top: 0;
+    }
 }
 
 #Home_Page_Text_Content blockquote {
@@ -430,13 +487,6 @@ header > aside > ul > li {
 #Services_section{
     position: relative;
 }
-.Slider{
-    display: flex;
-    flex-direction: row;
-    padding-left: 19vw;
-    padding-right: 10vw;
-
-}
 /*header (Services)*/
 #Services{
     position: relative;
@@ -451,95 +501,37 @@ header > aside > ul > li {
     left: 45vw;
     top: 50px;
 }
-/*UI/Ux development main div*/
-#UI\/UX_Development{
-    flex-grow: 1;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: 20vw;
+.Slider{
+    width: 80%;
+    margin:150px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+.coverBox{
+    width: 400px;
+    height: 400px;
+    margin: 0 15px;
+    transition: 0.7s;
+    color: white;
+    background : linear-gradient(277deg, rgba(0, 42, 241, 0.6), rgb(3, 87, 255));
+    border-radius:0px 60px 0px 26px ;
 
-/*UI/Ux development main div--> image*/
+}
+.coverBox:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 3;
+}
 #UI\/UX_Development>img:nth-child(1){
-    height: 211px;
-    margin-top: 25px;
-    margin-bottom: 19px;
+    height:241px;
 }
-/*UI/Ux development main div--> heading*/
-#UI\/UX_Development>h3:nth-child(2){
-    margin-bottom: 19px;
-    font-size: 3em;
-    margin-top: 23px;
-    margin-left: 12px;
-}
-/*UI/Ux development main div--> blockquate*/
-#UI\/UX_Development>blockquote:nth-child(3){
-    margin-left: 12px;
-}
-/*UI/Ux development main div--> cite*/
-#UI\/UX_Development>cite:nth-child(4){
-    margin-left: 12px;
-}
-/*WebDevelopment development main div*/
-#Web_Development{
-    flex-grow: 1;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: 23vw;
-}
-/*Web development main div--> image*/
 #Web_Development>img:nth-child(1){
-    height: 211px;
-    margin-top: 25px;
-    margin-bottom: 19px;
-    margin-left: 12px;
+    height:207px;
 }
-
-/* Web development main div--> heading*/
-#Web_Development>h3:nth-child(2){
-    margin-bottom: 19px;
-    font-size: 3em;
-    margin-top: 23px;
-    margin-left: 12px;
-}
-/*Web development main div--> blockquate*/
-#Web_Development>blockquote:nth-child(3){
-    margin-left: 12px;
-}
-/*Web development main div--> cite*/
-#Web_Development>cite:nth-child(4){
-    margin-left: 12px;
-}
-/*Mobile development main div */
-#Mobile_Development{
-    flex-grow: 1;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    width: 23vw;
-}
-/*Mobile development main div--> image*/
 #Mobile_Development>img:nth-child(1){
-    height: 211px;
-    margin-top: 25px;
-    margin-bottom: 19px;
-    margin-left: 12px;
+    height:192px;
 }
-/* Mobile  development main div--> heading*/
-#Mobile_Development>h3:nth-child(2){
-    margin-bottom: 19px;
-    font-size: 3em;
-    margin-top: 23px;
-    margin-left: 12px;
-}
-/* Mobile  development main div--> blockquate*/
-#Mobile_Development>blockquote:nth-child(3){
-    margin-left: 12px;
-}
-/* Mobile  development main div--> cite*/
-#Mobile_Development>cite:nth-child(4){
-    margin-left: 12px;
-}
-
 /*===================================================Projects Page ===================================================*/
 #Projects_Section{
     position: relative;
@@ -555,7 +547,7 @@ header > aside > ul > li {
 /*project that i had created*/
 #Projects_Section>p:nth-child(2){
     position: absolute;
-    left: 45vw;
+    left: 44vw;
     top: 64px;
 }
 /*image-->clinicSystem*/
@@ -585,7 +577,7 @@ header > aside > ul > li {
 /*===================================================Page Footer =====================================================*/
 footer{
     position: relative;
-    background-color: aqua;
+    background: linear-gradient(187deg, rgb(255 255 255), rgb(6 7 255 / 82%));
     top: 65px;
 }
 footer>section{
