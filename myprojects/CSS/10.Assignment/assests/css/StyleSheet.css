@@ -1,0 +1,99 @@
+body{
+    overflow: hidden;
+}
+.skiy{
+    height: 100vh;
+    width: 100%;
+    background: url("../images/sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.road{
+    height: 200px;
+    width: 500%;
+    background: url("../images/road.jpg");
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: 4s roadGo;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes roadGo {
+    0%{
+
+    }
+    100%{
+        transform: translateX(-3235px);
+    }
+}
+.buildings{
+    height: 250px;
+    width: 500%;
+    background: url("../images/city.png");
+    display: block;
+    position: absolute;
+    bottom:199px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: 4s roadGo;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.carImage{
+    height: 247px;
+    width: 522px;
+    display: block;
+    position: fixed;
+    bottom: 80px;
+    left: 342px;
+    z-index: 2;
+}
+#wheelImage1{
+    height: 97px;
+    width: 97px;
+    position: fixed;
+    bottom: 102px;
+    left: 386px;
+    z-index: 2;
+    animation: 4s wheel;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+#wheelImage2{
+    height: 97px;
+    width: 97px;
+    position: fixed;
+    bottom: 102px;
+    left: 707px;
+    z-index: 2;
+    animation: 4s wheel;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel {
+    0%{
+
+    }
+    40%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}

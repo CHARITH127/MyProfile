@@ -1,0 +1,61 @@
+
+main{
+    height: 303px;
+    width: 513px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 5px solid red;
+    overflow: hidden;
+}
+main>section{
+    height: 100%;
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+main>section>div{
+    width: 100%;
+}
+
+section>div:nth-child(1){
+    background: url("../images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+section>div:nth-child(2){
+    background: url("../images/image2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+section>div:nth-child(3){
+    background: url("../images/image3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+section>div:nth-child(4){
+    background: url("../images/image4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@keyframes slider {
+    0%,15%{
+        transform: translateX(0);
+    }
+    25%,40%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+    80%,100%{
+        transform: translateX(-75%);
+    }
+}

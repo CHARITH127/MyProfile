@@ -1,0 +1,44 @@
+div{
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    border-radius: 20px;
+    position: absolute;
+    animation: 3s boxAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boxAnimation {
+    0%{
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: yellow;
+
+    }
+    25%{
+        top: 0;
+        left: 1500px;
+        transform: rotate(90deg);
+        background-color: blue;
+    }
+    50%{
+        top: 500px;
+        left: 1500px;
+        transform: rotate(180deg);
+        background-color: green;
+    }
+    75%{
+        top: 500px;
+        left: 0;
+        transform: rotate(270deg);
+        background-color: red;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+        background-color: yellow;
+    }
+}
