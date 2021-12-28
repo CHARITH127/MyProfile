@@ -600,6 +600,10 @@ header > aside > ul > li {
     width: max-content;
     height: max-content;
     margin: 10px auto;
+
+}
+.viewMore{
+    text-decoration: none;
 }
 /*=================================================Page Footer =====================================================*/
 footer{
