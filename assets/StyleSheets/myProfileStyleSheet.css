@@ -1017,4 +1017,73 @@ small{
         font-size: 13px;
         width: 202px;
     }
+
+    /*=================================About me page=====================================================*/
+    #About_Me_Section{
+        position: relative;
+        height: max-content;
+    }
+    #aboutMePageImage{
+        opacity: 0.2;
+        position: absolute;
+        width: 100vw;
+        height: 630px;
+        left: 0;
+        margin: auto;
+    }
+    #About_Me_Section>section:nth-child(2)>div{
+        position: relative;
+        font-size: 10px;
+        right: 0;
+        top: 63px;
+        width: 219px;
+        padding-left: 0;
+        margin: 20px;
+    }
+
+    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>h2:nth-child(1){
+        top: 0;
+        width: 153px;
+        left: 0;
+        position: relative;
+    }
+
+    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #verticleLine{
+        top: 33px;
+        height: 280px;
+        right: 157px;
+    }
+
+
+
+    /*=================================skill page=====================================================*/
+    /*#skillPage{
+        top: 108vh;
+        position: relative;
+    }*/
 }
