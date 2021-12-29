@@ -78,11 +78,12 @@ header {
     background-color:#1e90ff ;
 }
 
+
 header > aside > ul {
     font-family: "Public Sans";
     color: #fffcfc;
     position: absolute;
-    top: 31px;
+    top: 17px;
     right: 0;
 }
 
@@ -924,4 +925,96 @@ footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
 small{
     position: relative;
     left: 43vw;
+}
+
+/*=======================================================responsive*===================================================*/
+@media all and (max-width:320px){
+    header{
+       height: 57px;
+    }
+
+    header>img:nth-child(1){
+        height: 45px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    header>aside:nth-child(2)>ul{
+        padding-left: 0;
+        top: 25px;
+        margin: 9px;
+    }
+
+    .Home_Page_picture{
+        height: 515px;
+        left: 0px;
+        width: 107%;
+    }
+    #Home_Page_Text_Content{
+        top: 112px;
+        left: 16px;
+    }
+
+    #Home_Page_Text_Content>p:nth-child(1){
+        font-size: 17px;
+    }
+    #Home_Page_Text_Content>h1:nth-child(2){
+        font-size: 38px;
+    }
+
+    .animatedText{
+        position: relative;
+        height: 30.03px;
+    }
+    .animatedText>div span{
+        font-size: 27px;
+    }
+
+    @keyframes typingOrder {
+        0%{
+            margin-top: 0;
+        }
+        33.333%{
+            margin-top: -34.06px;
+        }
+        66.666%{
+            margin-top: -62.12px;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+
+    #Home_Page_Text_Content>blockquote:nth-child(4){
+        font-size: 18px;
+        width: max-content;
+        height: 81px;
+    }
+    #Home_Page_Text_Content>blockquote:nth-child(4)>p{
+        width: 203px;
+    }
+    #Home_Page_Text_Content>cite:nth-child(5){
+        position: relative;
+        font-size: 24px;
+        top: 45px;
+    }
+    #naigationsIcons{
+        position: relative;
+        top: 60px;
+    }
+
+    #naigationsIcons img{
+        height: 28px;
+    }
+    #downloadCvButten{
+        position: relative;
+        top: 74px;
+    }
+    #downloadCvButten>button{
+        font-size: 13px;
+        width: 202px;
+    }
 }
