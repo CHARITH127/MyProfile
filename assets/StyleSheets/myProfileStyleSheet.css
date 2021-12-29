@@ -73,15 +73,16 @@ header {
     color: #417bee;
     position: fixed;
     width: 100vw;
-    height: 5vh;
+    height: 9vh;
     z-index: 100;
+    background-color:#1e90ff ;
 }
 
 header > aside > ul {
     font-family: "Public Sans";
     color: #fffcfc;
     position: absolute;
-    top: 0;
+    top: 31px;
     right: 0;
 }
 
@@ -719,40 +720,40 @@ fieldset{
     background-color: blue;
     color: white;
 }
-/*bottom of the page*/
+/*!*bottom of the page*!
 footer>section:nth-child(2){
     display: flex;
     flex-direction: row;
 
 }
-/*main divs of the footer section */
+!*main divs of the footer section *!
 footer>section:nth-child(2)>div{
     height: max-content;
 }
-/*Description heading*/
+!*Description heading*!
 footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
     font-size: 23px;
     margin-bottom: 0px;
     margin-top: 6px;
 }
 
-/*Description*/
+!*Description*!
 footer>section:nth-child(2)>div:nth-child(1)>pre:nth-child(2){
     margin-left: -116px;
     margin-top: 3px;
     margin-bottom: 0;
 }
-/*NAVIGATIONS*/
+!*NAVIGATIONS*!
 footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3){
     margin-left: 8px;
 }
 
-/*services main div*/
+!*services main div*!
 footer>section:nth-child(2)>div:nth-child(2){
     position: relative;
     left: 233px;
 }
-/*Services*/
+!*Services*!
 footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
     margin-bottom: 0px;
     margin-top: 3px;
@@ -769,39 +770,40 @@ footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2){
 footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
     margin-bottom: 3px;
 }
-/*icons of services*/
+!*icons of services*!
+
 .fas{
     margin-right: 23px;
     color: blue;
 }
 
-/*contact me main div*/
+!*contact me main div*!
 footer>section:nth-child(2)>div:nth-child(3){
     position: relative;
     left: 630px;
     height: 244px;
 }
-/*contact me*/
+!*contact me*!
 footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
     margin-bottom: 0px;
     margin-top: 3px;
     font-size: 23px;
 }
 
-/*pre text of contact me*/
+!*pre text of contact me*!
 footer>section:nth-child(2)>div:nth-child(3)>pre:nth-child(3){
     position: absolute;
     top: 16px;
     right: 103px;
 }
-/*telegram image*/
+!*telegram image*!
 footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
     height: 30px;
     position: absolute;
     top: 97px;
     right: 190px;
 }
-/*contact number*/
+!*contact number*!
 footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5) {
     position: absolute;
     top: 86px;
@@ -814,14 +816,14 @@ footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5) {
     color: black;
 }
 
-/*gmail icon*/
+!*gmail icon*!
 footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
     height: 30px;
     position: absolute;
     top: 140px;
     right: 186px;
 }
-/*gmail address*/
+!*gmail address*!
 footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
     position: relative;
     bottom: -63px;
@@ -830,6 +832,92 @@ footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
 .gmailaddress{
     text-decoration: none;
     color: black;
+}
+footer>section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}*/
+
+footer>section:nth-child(2){
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+footer>section:nth-child(2) div{
+    width: calc(100% * 1 / 3);
+    position: relative;
+}
+footer>section:nth-child(2) div>h4:nth-child(1){
+    font-size: 2rem;
+}
+
+/*footer about me description*/
+footer>section:nth-child(2) div>p:nth-child(2){
+    width: 69%;
+    margin-bottom: 25px;
+}
+
+/*services section ul*/
+footer>section:nth-child(2) div>ul:nth-child(2){
+    list-style: none;
+    padding: 3px;
+}
+/*services section ul list items*/
+footer>section:nth-child(2) div>ul:nth-child(2) li{
+    padding-bottom: 9px;
+    padding-left: 32px;
+}
+.fas{
+    padding-right: 7px;
+}
+/*contct me section*/
+/*Adderss image*/
+footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+    position: absolute;
+    left: 34px;
+}
+
+/*address*/
+footer>section:nth-child(2)>div:nth-child(3)>pre:nth-child(3){
+    position: absolute;
+    left: -64px;
+    top: 108px;
+}
+
+/*telegram image*/
+footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+    position: absolute;
+    left: 34px;
+    top: 216px;
+}
+
+/*telegrm number*/
+footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+    position: absolute;
+    left: 87px;
+    top: 209px;
+}
+.contactNumber{
+    color: black;
+    text-decoration: none;
+}
+
+/*gmail imag*/
+footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+    position: absolute;
+    left: 34px;
+    top: 273px;
+}
+/*gmail address*/
+footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    position: absolute;
+    left: 88px;
+    top: 263px;
+}
+
+.gmailaddress{
+    color: black;
+    text-decoration: none;
 }
 
 /*small*/
