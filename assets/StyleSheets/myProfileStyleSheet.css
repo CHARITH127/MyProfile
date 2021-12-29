@@ -116,7 +116,7 @@ header > aside > ul > li {
     margin: auto;
     right: 10vw;
     height: 95vh;
-    bottom: 0vh;
+    bottom: 0%;
 }
 
 /*================================================Home Page Text======================================================*/
@@ -928,9 +928,14 @@ small{
 }
 
 /*=======================================================responsive*===================================================*/
-@media all and (max-width:320px){
+@media all and (min-width: 325px) and (max-width:425px){
     header{
        height: 57px;
+    }
+
+    aside{
+        position: relative;
+        height: 57px;
     }
 
     header>img:nth-child(1){
@@ -944,12 +949,14 @@ small{
 
     header>aside:nth-child(2)>ul{
         padding-left: 0;
-        top: 25px;
-        margin: 9px;
+        top: 33px;
+        margin: auto;
+        left: 0;
+        width: max-content;
     }
 
     .Home_Page_picture{
-        height: 515px;
+        height: 70%;
         left: 0px;
         width: 107%;
     }
@@ -1082,8 +1089,37 @@ small{
 
 
     /*=================================skill page=====================================================*/
-    /*#skillPage{
-        top: 108vh;
+    #skillPage{
         position: relative;
-    }*/
+    }
+
+    #Skill{
+        position: unset;
+        left: 0;
+        top: 0;
+    }
+
+    #skillPage>h2:nth-child(1){
+        position: absolute;
+        margin: auto;
+        left: 0px;
+        right: 0;
+        text-align: center;
+        top: -102px;
+    }
+
+    #skillPage>p:nth-child(2){
+        position: absolute;
+        font-size: 1.5em;
+        top: -39px;
+        left: 0;
+        text-align: center;
+        margin: auto;
+        right: 0;
+    }
+
+    #skillPage>div:nth-child(3){
+        width: 80%;
+        margin-top: 218px;
+    }
 }
