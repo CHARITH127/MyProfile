@@ -928,465 +928,6 @@ small{
 }
 
 /*=======================================================responsive*===================================================*/
-/*@media all and (min-width: 325px) and (max-width:425px){
-    header{
-       height: 57px;
-    }
-
-    aside{
-        position: relative;
-        height: 57px;
-    }
-
-    header>img:nth-child(1){
-        height: 45px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    header>aside:nth-child(2)>ul{
-        padding-left: 0;
-        top: 33px;
-        margin: auto;
-        left: 0;
-        width: max-content;
-    }
-
-    .Home_Page_picture{
-        height: 64%;
-        left: 0px;
-        width: 68%;
-    }
-    #Home_Page_Text_Content{
-        top: 112px;
-        left: 16px;
-    }
-
-    #Home_Page_Text_Content>p:nth-child(1){
-        font-size: 68%;
-    }
-    #Home_Page_Text_Content>h1:nth-child(2){
-        font-size: 38px;
-    }
-
-    .animatedText{
-        position: relative;
-        height: 30.03px;
-    }
-    .animatedText>div span{
-        font-size: 27px;
-    }
-
-    @keyframes typingOrder {
-        0%{
-            margin-top: 0;
-        }
-        33.333%{
-            margin-top: -34.06px;
-        }
-        66.666%{
-            margin-top: -62.12px;
-        }
-        100%{
-            margin-top: 0;
-        }
-    }
-
-    #Home_Page_Text_Content>blockquote:nth-child(4){
-        font-size: 18px;
-        width: max-content;
-        height: 81px;
-    }
-    #Home_Page_Text_Content>blockquote:nth-child(4)>p{
-        width: 203px;
-    }
-    #Home_Page_Text_Content>cite:nth-child(5){
-        position: relative;
-        font-size: 24px;
-        top: 45px;
-    }
-    #naigationsIcons{
-        position: relative;
-        top: 60px;
-    }
-
-    #naigationsIcons img{
-        height: 28px;
-    }
-    #downloadCvButten{
-        position: relative;
-        top: 74px;
-    }
-    #downloadCvButten>button{
-        font-size: 13px;
-        width: 202px;
-    }
-
-    !*=================================About me page=====================================================*!
-    #About_Me_Section{
-        position: relative;
-        height: max-content;
-    }
-    #aboutMePageImage{
-        opacity: 0.2;
-        position: absolute;
-        width: 100vw;
-        height: 630px;
-        left: 0;
-        margin: auto;
-    }
-    #About_Me_Section>section:nth-child(2)>div{
-        position: relative;
-        font-size: 10px;
-        right: 0;
-        top: 63px;
-        width: 219px;
-        padding-left: 0;
-        margin: 20px;
-    }
-
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>h2:nth-child(1){
-        top: 0;
-        width: 153px;
-        left: 0;
-        position: relative;
-    }
-
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(3){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(4){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-
-    #verticleLine{
-        top: 33px;
-        height: 280px;
-        right: 157px;
-    }
-
-
-
-    !*=================================skill page=====================================================*!
-    #skillPage{
-        position: relative;
-    }
-
-    #Skill{
-        position: unset;
-        left: 0;
-        top: 0;
-    }
-
-    #skillPage>h2:nth-child(1){
-        position: absolute;
-        margin: auto;
-        left: 0px;
-        right: 0;
-        text-align: center;
-        top: -102px;
-    }
-
-    #skillPage>p:nth-child(2){
-        position: absolute;
-        font-size: 1.5em;
-        top: -39px;
-        left: 0;
-        text-align: center;
-        margin: auto;
-        right: 0;
-    }
-
-    #skillPage>div:nth-child(3){
-        width: 80%;
-        margin-top: 218px;
-    }
-
-    !*=================================service page=====================================================*!
-    .Slider{
-        position: relative;
-        flex-direction: column;
-        margin-top: 0;
-        width: 73%;
-        height: 724px;
-    }
-
-    .coverBox{
-        width: 100%;
-        height: calc(100% * 1 / 3);
-        margin: 0;
-        margin-top: 11px;
-    }
-
-    .coverBox>div{
-        width: 100%;
-        height: 100%;
-    }
-    #UI\/UX_Development>img:nth-child(1){
-        height: 43%;
-    }
-    #Web_Development>img:nth-child(1){
-        height: 43%;
-    }
-    #Mobile_Development>img:nth-child(1){
-        height: 43%;
-    }
-    .coverBox>div>h3:nth-child(2){
-        font-size: 70%;
-    }
-
-    .coverBox>div>blockquote:nth-child(3){
-        font-size: 65%;
-    }
-    .coverBox>div>cite:nth-child(4){
-        font-size: 54%;
-    }
-
-    #Web_Development>blockquote:nth-child(3){
-        font-size: 8px;
-    }
-    #Web_Development>cite:nth-child(4){
-        font-size: 9px;
-    }
-
-    #Mobile_Development>blockquote:nth-child(3){
-        font-size: 8px;
-    }
-
-    .coverBox:hover{
-        transform: scale(1.3);
-    }
-
-    #Services{
-        position: unset;
-    }
-
-    #Services_section>h2:nth-child(1){
-        position: relative;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-    #Services_section>p:nth-child(2){
-        position: relative;
-        top: -30px;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-
-    !*=================================projects page=====================================================*!
-
-    #Projects_Section>h2:nth-child(1){
-        position: relative;
-        top: -103px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-    #Projects{
-        left: 0;
-    }
-
-    #Projects_Section>p:nth-child(2){
-        position: relative;
-        top: -98px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-    .externalBox{
-        position: relative;
-        top: -78px;
-        flex-direction: column;
-        width: 88%;
-        height: 563px;
-    }
-    .mainBox{
-        width: 100%;
-        margin: 0;
-        height: calc(100%*1/2);
-        margin-bottom: 13px;
-    }
-
-    #Projects_Section>div:nth-child(4){
-        position: relative;
-        top: -87px;
-    }
-    !*=================================page footer=====================================================*!
-    footer{
-        top: 0;
-    }
-
-    footer>section:nth-child(1){
-        height: 665px;
-    }
-
-    footer>section:nth-child(1)>h3:nth-child(1){
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    footer>section:nth-child(1)>h3:nth-child(2){
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
-
-    footer>section:nth-child(1)>section:nth-child(3){
-        height: 300px;
-        width: 300px;
-        margin: auto;
-        margin-bottom: 8px;
-    }
-
-    iframe{
-        height: 100%;
-        width: 100%;
-    }
-
-    footer>section:nth-child(1)>section:nth-child(4){
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        height: 375px;
-        margin-top: 11px;
-    }
-
-    footer>section:nth-child(1)>section:nth-child(4)>div:nth-child(1){
-        height: 240px;
-        width: 100%;
-    }
-    form{
-        margin: 6px;
-        width: 98%;
-    }
-
-    fieldset{
-        width: 100%;
-    }
-
-    #name{
-        height: 12%;
-        width: 34%;
-    }
-
-    #email{
-        width: 42%;
-        height: 12%;
-    }
-
-    #subject{
-        width: 89%;
-        height: 23%;
-    }
-
-    #message{
-        width: 89%;
-    }
-
-    #messageSendButten{
-        width: 59%;
-        margin: 6px;
-        height: 67%;
-        font-size: 111%;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
-        font-size: 13px;
-    }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
-        font-size: 8px;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
-        height: 16px;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
-        font-size: 13px;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
-        padding-left: 0;
-        font-size: 8px;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
-        font-size: 13px;
-    }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
-        left: 0;
-    }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
-        padding-left: 29%;
-        width: 70%;
-        right: 0;
-        font-size: 61%;
-    }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
-        left: 0;
-        position: relative;
-        top: 0;
-    }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
-        position: relative;
-        top: -27px;
-        left: 33px;
-        margin: auto;
-        font-size: 66%;
-    }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
-        left: 0;
-        position: relative;
-        top: 0;
-    }
-
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
-        position: relative;
-        top: -27px;
-        left: 33px;
-        margin: auto;
-        font-size: 45%;
-    }
-    small{
-        font-size: 64%;
-        position: relative;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-}*/
 
 @media all and (max-width: 320px) {
     header{
@@ -1417,7 +958,7 @@ small{
 
     .Home_Page_picture{
         height: 64%;
-        left: 0px;
+        left: 98px;
         width: 68%;
     }
     #Home_Page_Text_Content{
@@ -1852,7 +1393,7 @@ small{
     }
 }
 
-@media all  and (min-width: 320px) and (max-width: 376px) {
+@media all  and (min-width: 321px) and (max-width: 376px) {
     header{
         height: 57px;
     }
@@ -2224,21 +1765,21 @@ small{
 
     #name{
         height: 12%;
-        width: 27%;
+        width: 26%;
     }
 
     #email{
-        width: 44%;
+        width: 49%;
         height: 12%;
     }
 
     #subject{
-        width: 86%;
+        width: 88%;
         height: 23%;
     }
 
     #message{
-        width: 85%;
+        width: 88%;
     }
 
     #messageSendButten{
@@ -2311,9 +1852,8 @@ small{
     small{
         font-size: 64%;
         position: relative;
-        left: 0;
+        left: 34px;
         right: 0;
-        margin: auto;
     }
 }
 
@@ -2775,9 +2315,8 @@ small{
     small{
         font-size: 64%;
         position: relative;
-        left: 0;
+        left: 48px;
         right: 0;
-        margin: auto;
     }
 }
 
@@ -2945,5 +2484,230 @@ small{
     }
     #message{
         width: 409px;
+    }
+    small{
+        left: 216px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+        font-size: 13px;
+    }
+    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+        font-size: 8px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+        height: 16px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+        font-size: 13px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+        padding-left: 0;
+        font-size: 8px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+        font-size: 13px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+        left: 0;
+        height:19px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+        padding-left: 15%;
+        width: 70%;
+        right: 0;
+        font-size: 61%;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+        left: 0;
+        position: relative;
+        top: 0;
+        height: 19px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+        position: relative;
+        top: -18px;
+        left: 28px;
+        margin: auto;
+        font-size: 66%;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+        left: 0;
+        position: relative;
+        top: 0;
+        height: 18px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+        position: relative;
+        top: -19px;
+        left: 33px;
+        margin: auto;
+        font-size: 45%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    #Home_Page_Text_Content{
+        top: 82px;
+    }
+
+    .Home_Page_picture{
+        height: 526px;
+    }
+    #downloadCvButten button{
+        width: 169px;
+    }
+
+    #aboutMePageImage{
+        left: 0;
+    }
+
+    #About_Me_Section>section:nth-child(2)>div:nth-child(1){
+        font-size: 12px;
+    }
+
+    #skillPage>h2:nth-child(1){
+        position: relative;
+        top: 41px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    #skillPage>p:nth-child(2){
+        position: relative;
+        top: 41px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #Skill{
+        position: unset;
+        left: 0;
+        top: 0;
+    }
+
+    #Services_section>h2:nth-child(1){
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    #Services{
+        position: unset;
+        left: 0;
+    }
+
+    #Services_section>p:nth-child(2){
+        position: relative;
+        top: -17px;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .slidder{
+        margin: 84px auto;
+        font-size: 13px;
+    }
+
+    #name{
+        width: 200px;
+        height: 45px;
+    }
+    #email{
+        width: 362px;
+        height: 45px;
+    }
+    #subject{
+        width: 607px;
+        height: 45px;
+    }
+    #message{
+        width: 607px;
+        height: 86px;
+    }
+
+    iframe{
+        width: 355px;
+    }
+
+    footer>section:nth-child(1)>h3:nth-child(1){
+        left: 361px;
+    }
+    footer>section:nth-child(1)>h3:nth-child(2){
+        left: 361px;
+    }
+    footer>section:nth-child(1)>section:nth-child(4){
+        left: 0;
+        padding-left: 358px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+        font-size: 13px;
+    }
+    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+        font-size: 8px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+        height: 16px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+        font-size: 13px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+        padding-left: 0;
+        font-size: 8px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+        font-size: 13px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+        left: 0;
+        height:19px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+        padding-left: 15%;
+        width: 70%;
+        right: 0;
+        font-size: 61%;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+        left: 0;
+        position: relative;
+        top: 0;
+        height: 19px;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+        position: relative;
+        top: -18px;
+        left: 28px;
+        margin: auto;
+        font-size: 66%;
+    }
+    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+        left: 0;
+        position: relative;
+        top: 0;
+        height: 18px;
+    }
+
+    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+        position: relative;
+        top: -19px;
+        left: 33px;
+        margin: auto;
+        font-size: 45%;
     }
 }
