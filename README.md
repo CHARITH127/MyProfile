@@ -26,7 +26,7 @@ There are :-
  <br>  
  <br>
 Refer the structural details of the page :
- <li> <a href="https://www.gloomaps.com/">Visual site map</a></li>
+ <li> <a href="https://www.gloomaps.com/yiptnfbCbP">Visual site map</a></li>
  <li> <a href="https://wireframe.cc/HnABtB">Wire Frame</a></li>
  <li> <a href="https://www.figma.com/file/QhciT7BfnBXxFWONNQTgiL/Web_Project?node-id=0%3A1">Mokup of the site</a></li>
  <li> <a href="https://charithwishvajith.000webhostapp.com/">Web Host</a></li>
