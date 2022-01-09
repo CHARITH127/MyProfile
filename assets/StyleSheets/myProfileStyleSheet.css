@@ -721,123 +721,6 @@ fieldset{
     background-color: blue;
     color: white;
 }
-/*!*bottom of the page*!
-footer>section:nth-child(2){
-    display: flex;
-    flex-direction: row;
-
-}
-!*main divs of the footer section *!
-footer>section:nth-child(2)>div{
-    height: max-content;
-}
-!*Description heading*!
-footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
-    font-size: 23px;
-    margin-bottom: 0px;
-    margin-top: 6px;
-}
-
-!*Description*!
-footer>section:nth-child(2)>div:nth-child(1)>pre:nth-child(2){
-    margin-left: -116px;
-    margin-top: 3px;
-    margin-bottom: 0;
-}
-!*NAVIGATIONS*!
-footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3){
-    margin-left: 8px;
-}
-
-!*services main div*!
-footer>section:nth-child(2)>div:nth-child(2){
-    position: relative;
-    left: 233px;
-}
-!*Services*!
-footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
-    margin-bottom: 0px;
-    margin-top: 3px;
-}
-.footerServices{
-    font-family: "Public Sans";
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
-}
-footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2){
-    list-style: none;
-}
-footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
-    margin-bottom: 3px;
-}
-!*icons of services*!
-
-.fas{
-    margin-right: 23px;
-    color: blue;
-}
-
-!*contact me main div*!
-footer>section:nth-child(2)>div:nth-child(3){
-    position: relative;
-    left: 630px;
-    height: 244px;
-}
-!*contact me*!
-footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
-    margin-bottom: 0px;
-    margin-top: 3px;
-    font-size: 23px;
-}
-
-!*pre text of contact me*!
-footer>section:nth-child(2)>div:nth-child(3)>pre:nth-child(3){
-    position: absolute;
-    top: 16px;
-    right: 103px;
-}
-!*telegram image*!
-footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
-    height: 30px;
-    position: absolute;
-    top: 97px;
-    right: 190px;
-}
-!*contact number*!
-footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5) {
-    position: absolute;
-    top: 86px;
-    padding-left: 37px;
-    width: max-content;
-    left: 1px;
-}
-.contactNumber{
-    text-decoration: none;
-    color: black;
-}
-
-!*gmail icon*!
-footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
-    height: 30px;
-    position: absolute;
-    top: 140px;
-    right: 186px;
-}
-!*gmail address*!
-footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
-    position: relative;
-    bottom: -63px;
-    padding-left: 40px;
-}
-.gmailaddress{
-    text-decoration: none;
-    color: black;
-}
-footer>section:nth-child(2){
-    display: flex;
-    flex-direction: row;
-}*/
 
 footer>section:nth-child(2){
     display: flex;
@@ -2791,7 +2674,7 @@ small{
         height: 45px;
     }
     #email{
-        width: 496px;
+        width: 462px;
         height: 45px;
     }
     #subject{
