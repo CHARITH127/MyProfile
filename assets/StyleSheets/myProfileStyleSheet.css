@@ -296,8 +296,10 @@ header > aside > ul > li {
     right: 10vw;
     top: 143vh;
     width: 20vw;
-    border: 2px solid red;
     border-radius: 2vh;
+    background: linear-gradient(
+            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
 }
 
 /*education level(technicle college)*/
@@ -306,8 +308,10 @@ header > aside > ul > li {
     right: 35vw;
     top: 158vh;
     width: 20vw;
-    border: 2px solid red;
     border-radius: 2vh;
+    background: linear-gradient(
+            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
 }
 
 /*education level(president's college)*/
@@ -316,8 +320,11 @@ header > aside > ul > li {
     right: 10vw;
     top: 173vh;
     width: 20vw;
-    border: 2px solid red;
     border-radius: 2vh;
+    background: linear-gradient(
+            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
+
 }
 
 /*education level(verticleLine)*/
@@ -329,6 +336,7 @@ header > aside > ul > li {
     top: 140vh;
     right: 32.5vw;
     background-color: red;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
 }
 
 /*===================================================Skill Page ======================================================*/
@@ -522,7 +530,7 @@ header > aside > ul > li {
 }
 .coverBox:hover{
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.29);
     z-index: 3;
 }
 #UI\/UX_Development>img:nth-child(1){
