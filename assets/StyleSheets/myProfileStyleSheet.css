@@ -3,6 +3,10 @@ body {
     color: #0000FF;
     margin: 0;
 }
+a{
+    text-decoration: none;
+
+}
 
 header > aside {
     color: #FFFCFC;
@@ -227,13 +231,51 @@ header > aside > ul > li {
 }
 
 #naigationsIcons {
-    margin: 1vw;
+    margin-top: 14px;
+}
+.socialMedaIcons .butten{
+    color: black;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.73);
+    transition: all 0.3s ease-out;
+}
+.socialMedaIcons .butten .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
 }
 
-#naigationsIcons img {
-    height: 5vh;
-    margin-left: 0.5vw;
+.socialMedaIcons .butten .icon i{
+    font-size: 25px;
+    line-height: 60px;
 }
+.socialMedaIcons .butten span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.socialMedaIcons .butten:hover{
+    width: 200px;
+}
+
+.socialMedaIcons .butten:hover .icon{
+    background-color: rgba(0, 94, 255, 0.78);
+    color: white;
+}
+
 
 #downloadCvButten > button {
     margin-top: 1vh;
@@ -1275,7 +1317,7 @@ small{
     footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
         position: relative;
         top: -19px;
-        left: 33px;
+        left: 28px;
         margin: auto;
         font-size: 45%;
     }
