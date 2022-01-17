@@ -329,11 +329,12 @@ header > aside > ul > li {
     top: 103vh;
     right: 18vw;
     width: 34vw;
+    color: #1e90ff;
 }
 
 /*header in about me*/
 #AboutMe {
-    color: #0000FF;
+    color: #1e90ff;
     font-size: 3em;
     font-style: normal;
     font-family: 'PT Serif', serif;
@@ -347,8 +348,7 @@ header > aside > ul > li {
 
 /*header (Education Level)*/
 #About_Me_Section section > div:nth-child(2) h2 {
-    font-family: "Public Sans";
-    color: #0000ff;
+    color:#1e90ff;
     position: absolute;
     top: 132vh;
     right: 41vw;
