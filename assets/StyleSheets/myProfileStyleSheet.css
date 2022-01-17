@@ -1,9 +1,10 @@
 body {
-    font-family: "Public Sans";
+    font-family: 'Poppins', sans-serif;
     color: #0000FF;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
 
 }
@@ -23,6 +24,15 @@ main > section > section > p {
 
 #About_Me_Section > section > div:nth-child(2) > div > p {
     color: black;
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+
+#About_Me_Section > section:nth-child(2) > div:nth-child(2) > div h4 {
+    text-align: center;
+    margin: 15px;
+    color: white;
 }
 
 #Services_section > div > blockquote {
@@ -62,8 +72,9 @@ footer {
     background-color: #1e90ff;
     height: 100vh;
 }
+
 /*skill levels bars container*/
-.containerBar{
+.containerBar {
     border: 5px solid red;
     position: absolute;
     height: 1.5vh;
@@ -79,7 +90,7 @@ header {
     width: 100vw;
     height: 9vh;
     z-index: 100;
-    background-color:#1e90ff ;
+    background-color: #1e90ff;
 }
 
 
@@ -157,30 +168,33 @@ header > aside > ul > li {
     margin: 0px;
 }
 
-.animatedText{
-    height:66.03px ;
-    overflow:hidden ;
+.animatedText {
+    height: 66.03px;
+    overflow: hidden;
 }
-.animatedText div{
+
+.animatedText div {
     animation: 9s typingOrder;
     animation-iteration-count: infinite;
     animation-timing-function: steps(1);
 }
+
 /*animated text*/
-.animatedText span{
+.animatedText span {
     position: relative;
     font-size: 58px;
     font-weight: bold;
     color: white;
     display: block;
 }
-.animatedText span:after{
+
+.animatedText span:after {
     content: "";
     position: absolute;
     left: 0;
     height: 102%;
-    border-left:2px solid black ;
-    right:-2px;
+    border-left: 2px solid black;
+    right: -2px;
     background-color: #1e90ff;
     animation: 3s typingText;
     animation-iteration-count: infinite;
@@ -189,27 +203,28 @@ header > aside > ul > li {
 }
 
 @keyframes typingText {
-    0%{
+    0% {
         left: 0;
     }
-    50%{
+    50% {
         left: 100%;
     }
-    100%{
+    100% {
         left: 0;
     }
 }
+
 @keyframes typingOrder {
-    0%{
+    0% {
         margin-top: 0;
     }
-    33.333%{
+    33.333% {
         margin-top: -66.03px;
     }
-    66.666%{
+    66.666% {
         margin-top: -132.06px;
     }
-    100%{
+    100% {
         margin-top: 0;
     }
 }
@@ -233,7 +248,8 @@ header > aside > ul > li {
 #naigationsIcons {
     margin-top: 14px;
 }
-.socialMedaIcons .butten{
+
+.socialMedaIcons .butten {
     color: black;
     display: inline-block;
     height: 60px;
@@ -244,10 +260,11 @@ header > aside > ul > li {
     background: #fff;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.73);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.73);
     transition: all 0.3s ease-out;
 }
-.socialMedaIcons .butten .icon{
+
+.socialMedaIcons .butten .icon {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -255,34 +272,40 @@ header > aside > ul > li {
     box-sizing: border-box;
     line-height: 60px;
     text-align: center;
+    color: #0000FF;
 }
 
-.socialMedaIcons .butten .icon i{
+.socialMedaIcons .butten .icon i {
     font-size: 25px;
     line-height: 60px;
 }
-.socialMedaIcons .butten span{
-    font-size: 20px;
+
+.socialMedaIcons .butten span {
+    font-size: 17px;
     font-weight: bold;
     line-height: 60px;
 }
 
-.socialMedaIcons .butten:hover{
+.socialMedaIcons .butten:hover {
     width: 200px;
 }
 
-.socialMedaIcons .butten:hover .icon{
-    background-color: rgba(0, 94, 255, 0.78);
+.socialMedaIcons .butten:hover .icon {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 6, 255, 1) 40%, rgba(255, 0, 199, 1) 100%);
     color: white;
 }
 
-
+/*#downloadCvButten{
+    position: absolute;
+    top: 492px;
+}*/
 #downloadCvButten > button {
-    margin-top: 1vh;
+    margin-top: 1.5vh;
+    margin-left: 18px;
     height: 4vh;
     width: 11vw;
     border: none;
-    font-family: "Public Sans";
     font-size: 1.5em;
     font-weight: bold;
     border-radius: 20vh;
@@ -339,8 +362,8 @@ header > aside > ul > li {
     top: 143vh;
     width: 20vw;
     border-radius: 2vh;
-    background: linear-gradient(
-            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 31%, rgba(0, 212, 255, 1) 100%);
     box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
 }
 
@@ -351,8 +374,8 @@ header > aside > ul > li {
     top: 158vh;
     width: 20vw;
     border-radius: 2vh;
-    background: linear-gradient(
-            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 31%, rgba(0, 212, 255, 1) 100%);
     box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
 }
 
@@ -363,8 +386,8 @@ header > aside > ul > li {
     top: 173vh;
     width: 20vw;
     border-radius: 2vh;
-    background: linear-gradient(
-            127deg, rgb(0 42 241 / 8%), rgb(3, 87, 255));
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 31%, rgba(0, 212, 255, 1) 100%);
     box-shadow: 0 18px 98px rgb(0 0 0 / 25%), 0 42px 49px rgb(0 0 0 / 22%);
 
 }
@@ -378,7 +401,7 @@ header > aside > ul > li {
     top: 140vh;
     right: 32.5vw;
     background-color: red;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*===================================================Skill Page ======================================================*/
@@ -391,218 +414,247 @@ header > aside > ul > li {
 }
 
 /*!*my skill level*!*/
- #skillPage p:nth-child(2){
-     position: absolute;
-     top: 206vh;
-     left: 45.5vw;
-     font-size: 1.5em;
-     margin: 0px;
-     margin-top: 1vh;
- }
-.skill li h3{
+#skillPage p:nth-child(2) {
+    position: absolute;
+    top: 206vh;
+    left: 45.5vw;
+    font-size: 1.5em;
+    margin: 0px;
+    margin-top: 1vh;
+}
+
+.skill li h3 {
     display: inline;
 }
-.skill li i{
+
+.skill li i {
     margin-right: 9px;
     color: #0000FF;
     font-size: 20px;
 }
-.skill{
+
+.skill {
     width: 500px;
     margin: 60px auto;
     color: black;
     padding: 20px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     list-style: none;
     margin-top: 97px;
 }
 
-.skill li{
+.skill li {
     margin: 20px 0;
     padding: 10px;
 
 }
-.bar{
+
+.bar {
     background: #9d9df6;
     display: block;
     height: 20px;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.bar:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.bar span{
+
+.bar span {
     height: 20px;
     float: left;
     background: linear-gradient(135deg, rgb(107, 135, 220) 0%, rgb(12, 34, 255) 100%);
 
 }
 
-.Java{
+.Java {
     width: 90%;
     animation: Java 3s;
 }
 
 @keyframes Java {
-    from{
-       width: 0%;
+    from {
+        width: 0%;
     }
-    to{
+    to {
         width: 90%;
     }
 }
-.Mysql{
+
+.Mysql {
     width: 70%;
     animation: Mysql 3s;
 
 }
+
 @keyframes Mysql {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 70%;
     }
 }
-.JavaScript{
+
+.JavaScript {
     width: 3%;
     animation: JavaScript 3s;
 
 }
+
 @keyframes JavaScript {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 3%;
     }
 }
-.JavaFX{
+
+.JavaFX {
     width: 95%;
     animation: JavaFX 3s;
 
 }
+
 @keyframes JavaFX {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 95%;
     }
 }
-.PHP{
+
+.PHP {
     width: 3%;
     animation: PHP 3s;
 
 }
+
 @keyframes PHP {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 3%;
     }
 }
-.HTML5{
+
+.HTML5 {
     width: 80%;
     animation: HTML5 3s;
 
 }
+
 @keyframes HTML5 {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 80%;
     }
 }
-.CSS{
+
+.CSS {
     width: 85%;
     animation: CSS 3s;
 
 }
+
 @keyframes CSS {
-    from{
+    from {
         width: 0%;
     }
-    to{
+    to {
         width: 85%;
     }
 }
 
 /*===================================================Service Page ====================================================*/
-#Services_section{
+#Services_section {
     position: relative;
 }
+
 /*header (Services)*/
-#Services{
+#Services {
     position: relative;
     font-style: normal;
     font-size: 3em;
     left: 42vw;
     color: #0000ff;
 }
+
 /*Services that i provided*/
-#Services_section p{
+#Services_section p {
     position: absolute;
     left: 45vw;
     top: 50px;
 }
-.Slider{
+
+.Slider {
     width: 80%;
-    margin:150px auto;
+    margin: 150px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.coverBox{
+
+.coverBox {
     width: 400px;
     height: 400px;
     margin: 0 15px;
     transition: 0.7s;
     color: white;
-    background : linear-gradient(277deg, rgba(0, 42, 241, 0.6), rgb(3, 87, 255));
-    border-radius:0px 60px 0px 26px ;
+    background: linear-gradient(277deg, rgba(0, 42, 241, 0.6), rgb(3, 87, 255));
+    border-radius: 0px 60px 0px 26px;
 
 }
-.coverBox:hover{
+
+.coverBox:hover {
     cursor: pointer;
     transform: scale(1.29);
     z-index: 3;
 }
-#UI\/UX_Development>img:nth-child(1){
-    height:241px;
+
+#UI\/UX_Development > img:nth-child(1) {
+    height: 241px;
 }
-#Web_Development>img:nth-child(1){
-    height:207px;
+
+#Web_Development > img:nth-child(1) {
+    height: 207px;
 }
-#Mobile_Development>img:nth-child(1){
-    height:192px;
+
+#Mobile_Development > img:nth-child(1) {
+    height: 192px;
 }
+
 /*===================================================Projects Page ===================================================*/
-#Projects_Section{
+#Projects_Section {
     position: relative;
 }
+
 /*heading tag*/
-#Projects{
+#Projects {
     position: relative;
     font-style: normal;
     font-size: 3em;
     left: 43vw;
     color: #0000ff;
 }
+
 /*project that i had created*/
-#Projects_Section>p:nth-child(2){
+#Projects_Section > p:nth-child(2) {
     position: absolute;
     left: 44vw;
     top: 64px;
 }
-.externalBox{
+
+.externalBox {
     width: 80%;
     margin: 30px auto;
     display: flex;
@@ -610,14 +662,15 @@ header > aside > ul > li {
     justify-content: center;
 }
 
-.mainBox{
+.mainBox {
     width: 400px;
     height: 400px;
     margin: 0 15px;
     box-shadow: 0 10px 20px rgba(0, 27, 255, 0.42);
     position: relative;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -630,7 +683,7 @@ header > aside > ul > li {
     cursor: pointer;
 }
 
-.Content{
+.Content {
     position: absolute;
     top: 31%;
     left: 0%;
@@ -638,36 +691,40 @@ header > aside > ul > li {
     color: white;
 }
 
-.contentImage{
+.contentImage {
     width: 100%;
     height: 100%;
 
 }
 
-.mainBox:hover .overlay{
+.mainBox:hover .overlay {
     opacity: 0.8;
 }
 
-#Projects_Section>div:nth-child(4){
+#Projects_Section > div:nth-child(4) {
     width: max-content;
     height: max-content;
     margin: 10px auto;
 
 }
-.viewMore{
+
+.viewMore {
     text-decoration: none;
 }
+
 /*=================================================Page Footer =====================================================*/
-footer{
+footer {
     position: relative;
     background: linear-gradient(187deg, rgb(255 255 255), rgb(6 7 255 / 82%));
     top: 65px;
 }
-footer>section{
-     position: relative;
- }
+
+footer > section {
+    position: relative;
+}
+
 /*heading*/
-footer>section:nth-child(1)>h3:nth-child(1){
+footer > section:nth-child(1) > h3:nth-child(1) {
     position: absolute;
     left: 617px;
     top: 0px;
@@ -675,22 +732,26 @@ footer>section:nth-child(1)>h3:nth-child(1){
     font-size: 3em;
     margin: 0;
 }
-dfn{
+
+dfn {
     font-style: normal;
 }
+
 /*w.c.wishvajith*/
-footer>section:nth-child(1)>h3:nth-child(2){
+footer > section:nth-child(1) > h3:nth-child(2) {
     position: absolute;
     left: 619px;
     top: 28px;
 }
+
 /*iframe*/
-footer>section:nth-child(1)>section:nth-child(3){
+footer > section:nth-child(1) > section:nth-child(3) {
     position: relative;
     top: 0px;
 }
+
 /*form main section*/
-footer>section:nth-child(1)>section:nth-child(4){
+footer > section:nth-child(1) > section:nth-child(4) {
     position: absolute;
     left: 610px;
     top: 70px;
@@ -698,21 +759,25 @@ footer>section:nth-child(1)>section:nth-child(4){
     display: flex;
     flex-direction: column;
 }
-footer>section>section:nth-child(4)>div:nth-child(1){
+
+footer > section > section:nth-child(4) > div:nth-child(1) {
     width: max-content;
 }
-form{
+
+form {
     width: max-content;
 }
-fieldset{
+
+fieldset {
     border: none;
     margin-left: -14px;
     width: max-content;
     margin-right: 0px;
     padding-right: 0;
 }
+
 /*feildset name input*/
-#name{
+#name {
     height: 63px;
     width: 295px;
     border: none;
@@ -723,8 +788,9 @@ fieldset{
     padding-left: 40px;
     margin-bottom: 10px;
 }
+
 /*feildset email input*/
-#email{
+#email {
     height: 63px;
     width: 696px;
     border: none;
@@ -737,7 +803,7 @@ fieldset{
 }
 
 /*feildset supject input*/
-#subject{
+#subject {
     height: 63px;
     width: 1037px;
     border: none;
@@ -750,7 +816,7 @@ fieldset{
 }
 
 /*fieldset message input */
-#message{
+#message {
     height: 114px;
     width: 1037px;
     border: none;
@@ -761,7 +827,8 @@ fieldset{
     padding-left: 40px;
     padding-top: 23px;
 }
-#messageSendButten{
+
+#messageSendButten {
     margin-top: 8px;
     width: 322px;
     height: 56px;
@@ -772,94 +839,102 @@ fieldset{
     color: white;
 }
 
-footer>section:nth-child(2){
+footer > section:nth-child(2) {
     display: flex;
     width: 80%;
     margin: 0 auto;
 }
-footer>section:nth-child(2) div{
+
+footer > section:nth-child(2) div {
     width: calc(100% * 1 / 3);
     position: relative;
 }
-footer>section:nth-child(2) div>h4:nth-child(1){
+
+footer > section:nth-child(2) div > h4:nth-child(1) {
     font-size: 2rem;
 }
 
 /*footer about me description*/
-footer>section:nth-child(2) div>p:nth-child(2){
+footer > section:nth-child(2) div > p:nth-child(2) {
     width: 69%;
     margin-bottom: 25px;
 }
 
 /*services section ul*/
-footer>section:nth-child(2) div>ul:nth-child(2){
+footer > section:nth-child(2) div > ul:nth-child(2) {
     list-style: none;
     padding: 3px;
 }
+
 /*services section ul list items*/
-footer>section:nth-child(2) div>ul:nth-child(2) li{
+footer > section:nth-child(2) div > ul:nth-child(2) li {
     padding-bottom: 9px;
     padding-left: 32px;
 }
-.fas{
+
+.fas {
     padding-right: 7px;
 }
+
 /*contct me section*/
 /*Adderss image*/
-footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
     position: absolute;
     left: 34px;
 }
 
 /*address*/
-footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
     width: 17%;
     position: relative;
     right: -89px;
 }
 
 /*telegram image*/
-footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
     position: absolute;
     left: 34px;
     top: 216px;
 }
 
 /*telegrm number*/
-footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
     position: absolute;
     left: 87px;
     top: 209px;
 }
-.contactNumber{
+
+.contactNumber {
     color: black;
     text-decoration: none;
 }
 
 /*gmail imag*/
-footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
     position: absolute;
     left: 34px;
     top: 273px;
 }
+
 /*gmail address*/
-footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
     position: absolute;
     left: 88px;
     top: 263px;
 }
 
-.gmailaddress{
+.gmailaddress {
     color: black;
     text-decoration: none;
 }
-.footerServices{
+
+.footerServices {
     text-decoration: none;
     color: black;
 }
 
 /*small*/
-small{
+small {
     position: relative;
     left: 43vw;
 }
@@ -867,16 +942,16 @@ small{
 /*=======================================================responsive*===================================================*/
 
 @media all and (max-width: 320px) {
-    header{
+    header {
         height: 57px;
     }
 
-    aside{
+    aside {
         position: relative;
         height: 57px;
     }
 
-    header>img:nth-child(1){
+    header > img:nth-child(1) {
         height: 45px;
         position: absolute;
         top: 0;
@@ -885,7 +960,7 @@ small{
         margin: auto;
     }
 
-    header>aside:nth-child(2)>ul{
+    header > aside:nth-child(2) > ul {
         padding-left: 0;
         top: 33px;
         margin: auto;
@@ -893,82 +968,91 @@ small{
         width: max-content;
     }
 
-    .Home_Page_picture{
+    .Home_Page_picture {
         height: 64%;
         left: 98px;
         width: 68%;
     }
-    #Home_Page_Text_Content{
+
+    #Home_Page_Text_Content {
         top: 73px;
         left: 16px;
     }
 
-    #Home_Page_Text_Content>p:nth-child(1){
+    #Home_Page_Text_Content > p:nth-child(1) {
         font-size: 68%;
     }
-    #Home_Page_Text_Content>h1:nth-child(2){
+
+    #Home_Page_Text_Content > h1:nth-child(2) {
         font-size: 38px;
     }
 
-    .animatedText{
+    .animatedText {
         position: relative;
         height: 30.03px;
     }
-    .animatedText>div span{
+
+    .animatedText > div span {
         font-size: 27px;
     }
 
     @keyframes typingOrder {
-        0%{
+        0% {
             margin-top: 0;
         }
-        33.333%{
+        33.333% {
             margin-top: -34.06px;
         }
-        66.666%{
+        66.666% {
             margin-top: -62.12px;
         }
-        100%{
+        100% {
             margin-top: 0;
         }
     }
 
-    #Home_Page_Text_Content>blockquote:nth-child(4){
+    #Home_Page_Text_Content > blockquote:nth-child(4) {
         font-size: 18px;
         width: max-content;
         height: 81px;
     }
-    #Home_Page_Text_Content>blockquote:nth-child(4)>p{
+
+    #Home_Page_Text_Content > blockquote:nth-child(4) > p {
         width: 203px;
     }
-    #Home_Page_Text_Content>cite:nth-child(5){
+
+    #Home_Page_Text_Content > cite:nth-child(5) {
         position: relative;
         font-size: 24px;
         top: 45px;
     }
-    #naigationsIcons{
+
+    #naigationsIcons {
         position: relative;
         top: 60px;
     }
 
-    #naigationsIcons img{
+    #naigationsIcons img {
         height: 28px;
     }
-    #downloadCvButten{
+
+    #downloadCvButten {
         position: relative;
         top: 74px;
     }
-    #downloadCvButten>button{
+
+    #downloadCvButten > button {
         font-size: 13px;
         width: 202px;
     }
 
     /*=================================About me page=====================================================*/
-    #About_Me_Section{
+    #About_Me_Section {
         position: relative;
         height: max-content;
     }
-    #aboutMePageImage{
+
+    #aboutMePageImage {
         opacity: 0.2;
         position: absolute;
         width: 100vw;
@@ -976,7 +1060,8 @@ small{
         left: 0;
         margin: auto;
     }
-    #About_Me_Section>section:nth-child(2)>div{
+
+    #About_Me_Section > section:nth-child(2) > div {
         position: relative;
         font-size: 10px;
         right: 0;
@@ -986,30 +1071,14 @@ small{
         margin: 20px;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>h2:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > h2:nth-child(1) {
         top: 0;
         width: 153px;
         left: 0;
         position: relative;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(3){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
@@ -1018,26 +1087,43 @@ small{
         margin-bottom: 19px;
     }
 
-    #verticleLine{
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #verticleLine {
         top: 33px;
         height: 280px;
         right: 157px;
     }
 
 
-
     /*=================================skill page=====================================================*/
-    #skillPage{
+    #skillPage {
         position: relative;
     }
 
-    #Skill{
+    #Skill {
         position: unset;
         left: 0;
         top: 0;
     }
 
-    #skillPage>h2:nth-child(1){
+    #skillPage > h2:nth-child(1) {
         position: absolute;
         margin: auto;
         left: 0px;
@@ -1046,7 +1132,7 @@ small{
         top: -102px;
     }
 
-    #skillPage>p:nth-child(2){
+    #skillPage > p:nth-child(2) {
         position: absolute;
         font-size: 1.5em;
         top: -39px;
@@ -1056,13 +1142,13 @@ small{
         right: 0;
     }
 
-    #skillPage>div:nth-child(3){
+    #skillPage > div:nth-child(3) {
         width: 80%;
         margin-top: 218px;
     }
 
     /*=================================service page=====================================================*/
-    .Slider{
+    .Slider {
         position: relative;
         flex-direction: column;
         margin-top: 0;
@@ -1070,57 +1156,63 @@ small{
         height: 724px;
     }
 
-    .coverBox{
+    .coverBox {
         width: 100%;
         height: calc(100% * 1 / 3);
         margin: 0;
         margin-top: 11px;
     }
 
-    .coverBox>div{
+    .coverBox > div {
         width: 100%;
         height: 100%;
     }
-    #UI\/UX_Development>img:nth-child(1){
+
+    #UI\/UX_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Web_Development>img:nth-child(1){
+
+    #Web_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Mobile_Development>img:nth-child(1){
+
+    #Mobile_Development > img:nth-child(1) {
         height: 43%;
     }
-    .coverBox>div>h3:nth-child(2){
+
+    .coverBox > div > h3:nth-child(2) {
         font-size: 70%;
     }
 
-    .coverBox>div>blockquote:nth-child(3){
+    .coverBox > div > blockquote:nth-child(3) {
         font-size: 65%;
     }
-    .coverBox>div>cite:nth-child(4){
+
+    .coverBox > div > cite:nth-child(4) {
         font-size: 54%;
     }
 
-    #Web_Development>blockquote:nth-child(3){
+    #Web_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
-    #Web_Development>cite:nth-child(4){
+
+    #Web_Development > cite:nth-child(4) {
         font-size: 9px;
     }
 
-    #Mobile_Development>blockquote:nth-child(3){
+    #Mobile_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
 
-    .coverBox:hover{
+    .coverBox:hover {
         transform: scale(1.3);
     }
 
-    #Services{
+    #Services {
         position: unset;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         right: 0;
         left: 0;
@@ -1128,7 +1220,7 @@ small{
         text-align: center;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -30px;
         left: 0;
@@ -1137,8 +1229,7 @@ small{
     }
 
     /*=================================projects page=====================================================*/
-
-    #Projects_Section>h2:nth-child(1){
+    #Projects_Section > h2:nth-child(1) {
         position: relative;
         top: -103px;
         left: 0;
@@ -1147,11 +1238,11 @@ small{
         text-align: center;
     }
 
-    #Projects{
+    #Projects {
         left: 0;
     }
 
-    #Projects_Section>p:nth-child(2){
+    #Projects_Section > p:nth-child(2) {
         position: relative;
         top: -98px;
         left: 0;
@@ -1160,59 +1251,62 @@ small{
         text-align: center;
     }
 
-    .externalBox{
+    .externalBox {
         position: relative;
         top: -78px;
         flex-direction: column;
         width: 88%;
         height: 563px;
     }
-    .mainBox{
+
+    .mainBox {
         width: 100%;
         margin: 0;
-        height: calc(100%*1/2);
+        height: calc(100% * 1 / 2);
         margin-bottom: 13px;
     }
 
-    #Projects_Section>div:nth-child(4){
+    #Projects_Section > div:nth-child(4) {
         position: relative;
         top: -87px;
     }
+
     /*=================================page footer=====================================================*/
-    footer{
+    footer {
         top: 0;
     }
 
-    footer>section:nth-child(1){
+    footer > section:nth-child(1) {
         height: 665px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         position: relative;
         top: 0;
         left: 0;
         font-size: 196%;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
         margin: 0;
     }
 
-    footer>section:nth-child(1)>section:nth-child(3){
+    footer > section:nth-child(1) > section:nth-child(3) {
         height: 300px;
         width: 300px;
         margin: auto;
         margin-bottom: 8px;
     }
 
-    iframe{
+    iframe {
         height: 100%;
         width: 100%;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4){
+    footer > section:nth-child(1) > section:nth-child(4) {
         position: relative;
         top: 0;
         left: 0;
@@ -1222,106 +1316,114 @@ small{
         margin-top: 11px;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4)>div:nth-child(1){
+    footer > section:nth-child(1) > section:nth-child(4) > div:nth-child(1) {
         height: 240px;
         width: 100%;
     }
-    form{
+
+    form {
         margin: 6px;
         width: 98%;
     }
 
-    fieldset{
+    fieldset {
         width: 100%;
     }
 
-    #name{
+    #name {
         height: 12%;
         width: 27%;
     }
 
-    #email{
+    #email {
         width: 44%;
         height: 12%;
     }
 
-    #subject{
+    #subject {
         width: 86%;
         height: 23%;
     }
 
-    #message{
+    #message {
         width: 85%;
     }
 
-    #messageSendButten{
+    #messageSendButten {
         width: 59%;
         margin: 6px;
         height: 67%;
         font-size: 111%;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 32%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 28px;
         margin: auto;
         font-size: 45%;
     }
-    small{
+
+    small {
         font-size: 64%;
         position: relative;
         left: 0;
@@ -1331,16 +1433,16 @@ small{
 }
 
 @media all  and (min-width: 321px) and (max-width: 376px) {
-    header{
+    header {
         height: 57px;
     }
 
-    aside{
+    aside {
         position: relative;
         height: 57px;
     }
 
-    header>img:nth-child(1){
+    header > img:nth-child(1) {
         height: 45px;
         position: absolute;
         top: 0;
@@ -1349,7 +1451,7 @@ small{
         margin: auto;
     }
 
-    header>aside:nth-child(2)>ul{
+    header > aside:nth-child(2) > ul {
         padding-left: 0;
         top: 33px;
         margin: auto;
@@ -1357,83 +1459,92 @@ small{
         width: max-content;
     }
 
-    .Home_Page_picture{
+    .Home_Page_picture {
         height: 55%;
         left: 108px;
         width: 68%;
         bottom: 0;
     }
-    #Home_Page_Text_Content{
+
+    #Home_Page_Text_Content {
         top: 161px;
         left: 16px;
     }
 
-    #Home_Page_Text_Content>p:nth-child(1){
+    #Home_Page_Text_Content > p:nth-child(1) {
         font-size: 68%;
     }
-    #Home_Page_Text_Content>h1:nth-child(2){
+
+    #Home_Page_Text_Content > h1:nth-child(2) {
         font-size: 38px;
     }
 
-    .animatedText{
+    .animatedText {
         position: relative;
         height: 30.03px;
     }
-    .animatedText>div span{
+
+    .animatedText > div span {
         font-size: 27px;
     }
 
     @keyframes typingOrder {
-        0%{
+        0% {
             margin-top: 0;
         }
-        33.333%{
+        33.333% {
             margin-top: -34.06px;
         }
-        66.666%{
+        66.666% {
             margin-top: -62.12px;
         }
-        100%{
+        100% {
             margin-top: 0;
         }
     }
 
-    #Home_Page_Text_Content>blockquote:nth-child(4){
+    #Home_Page_Text_Content > blockquote:nth-child(4) {
         font-size: 18px;
         width: max-content;
         height: 81px;
     }
-    #Home_Page_Text_Content>blockquote:nth-child(4)>p{
+
+    #Home_Page_Text_Content > blockquote:nth-child(4) > p {
         width: 203px;
     }
-    #Home_Page_Text_Content>cite:nth-child(5){
+
+    #Home_Page_Text_Content > cite:nth-child(5) {
         position: relative;
         font-size: 24px;
         top: 45px;
     }
-    #naigationsIcons{
+
+    #naigationsIcons {
         position: relative;
         top: 60px;
     }
 
-    #naigationsIcons img{
+    #naigationsIcons img {
         height: 28px;
     }
-    #downloadCvButten{
+
+    #downloadCvButten {
         position: relative;
         top: 74px;
     }
-    #downloadCvButten>button{
+
+    #downloadCvButten > button {
         font-size: 13px;
         width: 202px;
     }
 
     /*=================================About me page=====================================================*/
-    #About_Me_Section{
+    #About_Me_Section {
         position: relative;
         height: max-content;
     }
-    #aboutMePageImage{
+
+    #aboutMePageImage {
         opacity: 0.2;
         position: absolute;
         width: 100vw;
@@ -1441,7 +1552,8 @@ small{
         left: 0;
         margin: auto;
     }
-    #About_Me_Section>section:nth-child(2)>div{
+
+    #About_Me_Section > section:nth-child(2) > div {
         position: relative;
         font-size: 10px;
         right: 0;
@@ -1451,30 +1563,14 @@ small{
         margin: 20px;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>h2:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > h2:nth-child(1) {
         top: 0;
         width: 153px;
         left: 0;
         position: relative;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(3){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
@@ -1483,26 +1579,43 @@ small{
         margin-bottom: 19px;
     }
 
-    #verticleLine{
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #verticleLine {
         top: 33px;
         height: 280px;
         right: 157px;
     }
 
 
-
     /*=================================skill page=====================================================*/
-    #skillPage{
+    #skillPage {
         position: relative;
     }
 
-    #Skill{
+    #Skill {
         position: unset;
         left: 0;
         top: 0;
     }
 
-    #skillPage>h2:nth-child(1){
+    #skillPage > h2:nth-child(1) {
         position: absolute;
         margin: auto;
         left: 0px;
@@ -1511,7 +1624,7 @@ small{
         top: -102px;
     }
 
-    #skillPage>p:nth-child(2){
+    #skillPage > p:nth-child(2) {
         position: absolute;
         font-size: 1.5em;
         top: -39px;
@@ -1521,13 +1634,13 @@ small{
         right: 0;
     }
 
-    #skillPage>div:nth-child(3){
+    #skillPage > div:nth-child(3) {
         width: 80%;
         margin-top: 218px;
     }
 
     /*=================================service page=====================================================*/
-    .Slider{
+    .Slider {
         position: relative;
         flex-direction: column;
         margin-top: 0;
@@ -1535,57 +1648,63 @@ small{
         height: 724px;
     }
 
-    .coverBox{
+    .coverBox {
         width: 100%;
         height: calc(100% * 1 / 3);
         margin: 0;
         margin-top: 11px;
     }
 
-    .coverBox>div{
+    .coverBox > div {
         width: 100%;
         height: 100%;
     }
-    #UI\/UX_Development>img:nth-child(1){
+
+    #UI\/UX_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Web_Development>img:nth-child(1){
+
+    #Web_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Mobile_Development>img:nth-child(1){
+
+    #Mobile_Development > img:nth-child(1) {
         height: 43%;
     }
-    .coverBox>div>h3:nth-child(2){
+
+    .coverBox > div > h3:nth-child(2) {
         font-size: 70%;
     }
 
-    .coverBox>div>blockquote:nth-child(3){
+    .coverBox > div > blockquote:nth-child(3) {
         font-size: 65%;
     }
-    .coverBox>div>cite:nth-child(4){
+
+    .coverBox > div > cite:nth-child(4) {
         font-size: 54%;
     }
 
-    #Web_Development>blockquote:nth-child(3){
+    #Web_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
-    #Web_Development>cite:nth-child(4){
+
+    #Web_Development > cite:nth-child(4) {
         font-size: 9px;
     }
 
-    #Mobile_Development>blockquote:nth-child(3){
+    #Mobile_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
 
-    .coverBox:hover{
+    .coverBox:hover {
         transform: scale(1.3);
     }
 
-    #Services{
+    #Services {
         position: unset;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         right: 0;
         left: 0;
@@ -1593,7 +1712,7 @@ small{
         text-align: center;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -30px;
         left: 0;
@@ -1602,8 +1721,7 @@ small{
     }
 
     /*=================================projects page=====================================================*/
-
-    #Projects_Section>h2:nth-child(1){
+    #Projects_Section > h2:nth-child(1) {
         position: relative;
         top: -103px;
         left: 0;
@@ -1612,11 +1730,11 @@ small{
         text-align: center;
     }
 
-    #Projects{
+    #Projects {
         left: 0;
     }
 
-    #Projects_Section>p:nth-child(2){
+    #Projects_Section > p:nth-child(2) {
         position: relative;
         top: -98px;
         left: 0;
@@ -1625,59 +1743,62 @@ small{
         text-align: center;
     }
 
-    .externalBox{
+    .externalBox {
         position: relative;
         top: -78px;
         flex-direction: column;
         width: 88%;
         height: 563px;
     }
-    .mainBox{
+
+    .mainBox {
         width: 100%;
         margin: 0;
-        height: calc(100%*1/2);
+        height: calc(100% * 1 / 2);
         margin-bottom: 13px;
     }
 
-    #Projects_Section>div:nth-child(4){
+    #Projects_Section > div:nth-child(4) {
         position: relative;
         top: -87px;
     }
+
     /*=================================page footer=====================================================*/
-    footer{
+    footer {
         top: 0;
     }
 
-    footer>section:nth-child(1){
+    footer > section:nth-child(1) {
         height: 665px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         position: relative;
         top: 0;
         left: 0;
         font-size: 196%;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
         margin: 0;
     }
 
-    footer>section:nth-child(1)>section:nth-child(3){
+    footer > section:nth-child(1) > section:nth-child(3) {
         height: 300px;
         width: 300px;
         margin: auto;
         margin-bottom: 8px;
     }
 
-    iframe{
+    iframe {
         height: 100%;
         width: 100%;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4){
+    footer > section:nth-child(1) > section:nth-child(4) {
         position: relative;
         top: 0;
         left: 0;
@@ -1687,106 +1808,114 @@ small{
         margin-top: 11px;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4)>div:nth-child(1){
+    footer > section:nth-child(1) > section:nth-child(4) > div:nth-child(1) {
         height: 240px;
         width: 100%;
     }
-    form{
+
+    form {
         margin: 6px;
         width: 98%;
     }
 
-    fieldset{
+    fieldset {
         width: 100%;
     }
 
-    #name{
+    #name {
         height: 12%;
         width: 26%;
     }
 
-    #email{
+    #email {
         width: 49%;
         height: 12%;
     }
 
-    #subject{
+    #subject {
         width: 88%;
         height: 23%;
     }
 
-    #message{
+    #message {
         width: 88%;
     }
 
-    #messageSendButten{
+    #messageSendButten {
         width: 59%;
         margin: 6px;
         height: 67%;
         font-size: 111%;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 32%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 33px;
         margin: auto;
         font-size: 45%;
     }
-    small{
+
+    small {
         font-size: 64%;
         position: relative;
         left: 34px;
@@ -1794,17 +1923,17 @@ small{
     }
 }
 
-@media all and (min-width: 376px) and (max-width: 426px){
-    header{
+@media all and (min-width: 376px) and (max-width: 426px) {
+    header {
         height: 57px;
     }
 
-    aside{
+    aside {
         position: relative;
         height: 57px;
     }
 
-    header>img:nth-child(1){
+    header > img:nth-child(1) {
         height: 45px;
         position: absolute;
         top: 0;
@@ -1813,7 +1942,7 @@ small{
         margin: auto;
     }
 
-    header>aside:nth-child(2)>ul{
+    header > aside:nth-child(2) > ul {
         padding-left: 0;
         top: 33px;
         margin: auto;
@@ -1821,82 +1950,91 @@ small{
         width: max-content;
     }
 
-    .Home_Page_picture{
+    .Home_Page_picture {
         height: 64%;
         left: 121px;
         width: 68%;
     }
-    #Home_Page_Text_Content{
+
+    #Home_Page_Text_Content {
         top: 156px;
         left: 27px;
     }
 
-    #Home_Page_Text_Content>p:nth-child(1){
+    #Home_Page_Text_Content > p:nth-child(1) {
         font-size: 68%;
     }
-    #Home_Page_Text_Content>h1:nth-child(2){
+
+    #Home_Page_Text_Content > h1:nth-child(2) {
         font-size: 38px;
     }
 
-    .animatedText{
+    .animatedText {
         position: relative;
         height: 30.03px;
     }
-    .animatedText>div span{
+
+    .animatedText > div span {
         font-size: 27px;
     }
 
     @keyframes typingOrder {
-        0%{
+        0% {
             margin-top: 0;
         }
-        33.333%{
+        33.333% {
             margin-top: -34.06px;
         }
-        66.666%{
+        66.666% {
             margin-top: -62.12px;
         }
-        100%{
+        100% {
             margin-top: 0;
         }
     }
 
-    #Home_Page_Text_Content>blockquote:nth-child(4){
+    #Home_Page_Text_Content > blockquote:nth-child(4) {
         font-size: 18px;
         width: max-content;
         height: 81px;
     }
-    #Home_Page_Text_Content>blockquote:nth-child(4)>p{
+
+    #Home_Page_Text_Content > blockquote:nth-child(4) > p {
         width: 203px;
     }
-    #Home_Page_Text_Content>cite:nth-child(5){
+
+    #Home_Page_Text_Content > cite:nth-child(5) {
         position: relative;
         font-size: 24px;
         top: 45px;
     }
-    #naigationsIcons{
+
+    #naigationsIcons {
         position: relative;
         top: 60px;
     }
 
-    #naigationsIcons img{
+    #naigationsIcons img {
         height: 28px;
     }
-    #downloadCvButten{
+
+    #downloadCvButten {
         position: relative;
         top: 74px;
     }
-    #downloadCvButten>button{
+
+    #downloadCvButten > button {
         font-size: 13px;
         width: 202px;
     }
 
     /*=================================About me page=====================================================*/
-    #About_Me_Section{
+    #About_Me_Section {
         position: relative;
         height: max-content;
     }
-    #aboutMePageImage{
+
+    #aboutMePageImage {
         opacity: 0.2;
         position: absolute;
         width: 100vw;
@@ -1904,7 +2042,8 @@ small{
         left: 0;
         margin: auto;
     }
-    #About_Me_Section>section:nth-child(2)>div{
+
+    #About_Me_Section > section:nth-child(2) > div {
         position: relative;
         font-size: 10px;
         right: 0;
@@ -1914,30 +2053,14 @@ small{
         margin: 20px;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>h2:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > h2:nth-child(1) {
         top: 0;
         width: 153px;
         left: 0;
         position: relative;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(3){
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 81px;
-        margin-bottom: 19px;
-    }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
@@ -1946,26 +2069,43 @@ small{
         margin-bottom: 19px;
     }
 
-    #verticleLine{
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #About_Me_Section > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin-left: 81px;
+        margin-bottom: 19px;
+    }
+
+    #verticleLine {
         top: 33px;
         height: 280px;
         right: 157px;
     }
 
 
-
     /*=================================skill page=====================================================*/
-    #skillPage{
+    #skillPage {
         position: relative;
     }
 
-    #Skill{
+    #Skill {
         position: unset;
         left: 0;
         top: 0;
     }
 
-    #skillPage>h2:nth-child(1){
+    #skillPage > h2:nth-child(1) {
         position: absolute;
         margin: auto;
         left: 0px;
@@ -1974,7 +2114,7 @@ small{
         top: -102px;
     }
 
-    #skillPage>p:nth-child(2){
+    #skillPage > p:nth-child(2) {
         position: absolute;
         font-size: 1.5em;
         top: -39px;
@@ -1984,13 +2124,13 @@ small{
         right: 0;
     }
 
-    #skillPage>div:nth-child(3){
+    #skillPage > div:nth-child(3) {
         width: 80%;
         margin-top: 218px;
     }
 
     /*=================================service page=====================================================*/
-    .Slider{
+    .Slider {
         position: relative;
         flex-direction: column;
         margin-top: 0;
@@ -1998,57 +2138,63 @@ small{
         height: 724px;
     }
 
-    .coverBox{
+    .coverBox {
         width: 100%;
         height: calc(100% * 1 / 3);
         margin: 0;
         margin-top: 11px;
     }
 
-    .coverBox>div{
+    .coverBox > div {
         width: 100%;
         height: 100%;
     }
-    #UI\/UX_Development>img:nth-child(1){
+
+    #UI\/UX_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Web_Development>img:nth-child(1){
+
+    #Web_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Mobile_Development>img:nth-child(1){
+
+    #Mobile_Development > img:nth-child(1) {
         height: 43%;
     }
-    .coverBox>div>h3:nth-child(2){
+
+    .coverBox > div > h3:nth-child(2) {
         font-size: 70%;
     }
 
-    .coverBox>div>blockquote:nth-child(3){
+    .coverBox > div > blockquote:nth-child(3) {
         font-size: 65%;
     }
-    .coverBox>div>cite:nth-child(4){
+
+    .coverBox > div > cite:nth-child(4) {
         font-size: 54%;
     }
 
-    #Web_Development>blockquote:nth-child(3){
+    #Web_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
-    #Web_Development>cite:nth-child(4){
+
+    #Web_Development > cite:nth-child(4) {
         font-size: 9px;
     }
 
-    #Mobile_Development>blockquote:nth-child(3){
+    #Mobile_Development > blockquote:nth-child(3) {
         font-size: 8px;
     }
 
-    .coverBox:hover{
+    .coverBox:hover {
         transform: scale(1.3);
     }
 
-    #Services{
+    #Services {
         position: unset;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         right: 0;
         left: 0;
@@ -2056,7 +2202,7 @@ small{
         text-align: center;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -30px;
         left: 0;
@@ -2065,8 +2211,7 @@ small{
     }
 
     /*=================================projects page=====================================================*/
-
-    #Projects_Section>h2:nth-child(1){
+    #Projects_Section > h2:nth-child(1) {
         position: relative;
         top: -103px;
         left: 0;
@@ -2075,11 +2220,11 @@ small{
         text-align: center;
     }
 
-    #Projects{
+    #Projects {
         left: 0;
     }
 
-    #Projects_Section>p:nth-child(2){
+    #Projects_Section > p:nth-child(2) {
         position: relative;
         top: -98px;
         left: 0;
@@ -2088,59 +2233,62 @@ small{
         text-align: center;
     }
 
-    .externalBox{
+    .externalBox {
         position: relative;
         top: -78px;
         flex-direction: column;
         width: 88%;
         height: 563px;
     }
-    .mainBox{
+
+    .mainBox {
         width: 100%;
         margin: 0;
-        height: calc(100%*1/2);
+        height: calc(100% * 1 / 2);
         margin-bottom: 13px;
     }
 
-    #Projects_Section>div:nth-child(4){
+    #Projects_Section > div:nth-child(4) {
         position: relative;
         top: -87px;
     }
+
     /*=================================page footer=====================================================*/
-    footer{
+    footer {
         top: 0;
     }
 
-    footer>section:nth-child(1){
+    footer > section:nth-child(1) {
         height: 665px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         position: relative;
         top: 0;
         left: 0;
         font-size: 196%;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         position: relative;
         top: 0;
         left: 0;
         margin: 0;
     }
 
-    footer>section:nth-child(1)>section:nth-child(3){
+    footer > section:nth-child(1) > section:nth-child(3) {
         height: 300px;
         width: 300px;
         margin: auto;
         margin-bottom: 8px;
     }
 
-    iframe{
+    iframe {
         height: 100%;
         width: 100%;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4){
+    footer > section:nth-child(1) > section:nth-child(4) {
         position: relative;
         top: 0;
         left: 0;
@@ -2150,106 +2298,114 @@ small{
         margin-top: 11px;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4)>div:nth-child(1){
+    footer > section:nth-child(1) > section:nth-child(4) > div:nth-child(1) {
         height: 240px;
         width: 100%;
     }
-    form{
+
+    form {
         margin: 6px;
         width: 98%;
     }
 
-    fieldset{
+    fieldset {
         width: 100%;
     }
 
-    #name{
+    #name {
         height: 12%;
         width: 34%;
     }
 
-    #email{
+    #email {
         width: 44%;
         height: 12%;
     }
 
-    #subject{
-        width:89%;
+    #subject {
+        width: 89%;
         height: 23%;
     }
 
-    #message{
+    #message {
         width: 89%;
     }
 
-    #messageSendButten{
+    #messageSendButten {
         width: 59%;
         margin: 6px;
         height: 67%;
         font-size: 111%;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 32%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 33px;
         margin: auto;
         font-size: 45%;
     }
-    small{
+
+    small {
         font-size: 64%;
         position: relative;
         left: 48px;
@@ -2257,40 +2413,42 @@ small{
     }
 }
 
-@media all and (min-width: 426px) and (max-width: 769px){
-    .Home_Page_picture{
+@media all and (min-width: 426px) and (max-width: 769px) {
+    .Home_Page_picture {
         height: 71vh;
     }
 
-    #Home_Page_Text_Content{
+    #Home_Page_Text_Content {
         top: 11vh;
         left: 5vw;
     }
 
-    #downloadCvButten>button{
+    #downloadCvButten > button {
         width: 21vw;
     }
 
     /*===========================================================About me======================================*/
-    #aboutMePageImage{
-        left:-5%;
+    #aboutMePageImage {
+        left: -5%;
         opacity: 0.5;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(1)>h2:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(1) > h2:nth-child(1) {
         font-size: 87%;
     }
-    #About_Me_Section>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    #About_Me_Section > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 89%;
     }
+
     /*===========================================================Skill page======================================*/
-    #skillPage>p:nth-child(2){
+    #skillPage > p:nth-child(2) {
         left: 354px;
         margin-top: 12px;
     }
 
     /*===========================================================Services page======================================*/
-    .Slider{
+    .Slider {
         position: relative;
         flex-direction: column;
         margin-top: 0;
@@ -2298,57 +2456,63 @@ small{
         height: 617px;
     }
 
-    .coverBox{
+    .coverBox {
         width: 100%;
         height: calc(100% * 1 / 3);
         margin: 0;
         margin-top: 11px;
     }
 
-    .coverBox>div{
+    .coverBox > div {
         width: 100%;
         height: 100%;
     }
-    #UI\/UX_Development>img:nth-child(1){
+
+    #UI\/UX_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Web_Development>img:nth-child(1){
+
+    #Web_Development > img:nth-child(1) {
         height: 43%;
     }
-    #Mobile_Development>img:nth-child(1){
+
+    #Mobile_Development > img:nth-child(1) {
         height: 43%;
     }
-    .coverBox>div>h3:nth-child(2){
+
+    .coverBox > div > h3:nth-child(2) {
         font-size: 105%;
     }
 
-    .coverBox>div>blockquote:nth-child(3){
+    .coverBox > div > blockquote:nth-child(3) {
         font-size: 86%;
     }
-    .coverBox>div>cite:nth-child(4){
+
+    .coverBox > div > cite:nth-child(4) {
         font-size: 54%;
     }
 
-    #Web_Development>blockquote:nth-child(3){
+    #Web_Development > blockquote:nth-child(3) {
         font-size: 11px;
     }
-    #Web_Development>cite:nth-child(4){
+
+    #Web_Development > cite:nth-child(4) {
         font-size: 9px;
     }
 
-    #Mobile_Development>blockquote:nth-child(3){
+    #Mobile_Development > blockquote:nth-child(3) {
         font-size: 9px;
     }
 
-    .coverBox:hover{
+    .coverBox:hover {
         transform: scale(1.3);
     }
 
-    #Services{
+    #Services {
         position: unset;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         right: 0;
         left: 0;
@@ -2356,7 +2520,7 @@ small{
         text-align: center;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -30px;
         left: 0;
@@ -2365,23 +2529,23 @@ small{
     }
 
     /*===========================================================Projects page======================================*/
-    .mainBox{
+    .mainBox {
         height: 298px;
     }
 
-    #Projects{
+    #Projects {
         position: unset;
         left: 0;
     }
 
-    #Projects_Section>h2:nth-child(1){
+    #Projects_Section > h2:nth-child(1) {
         text-align: center;
         left: 0;
         position: relative;
         margin: auto;
     }
 
-    #Projects_Section>p:nth-child(2){
+    #Projects_Section > p:nth-child(2) {
         position: relative;
         top: 0px;
         left: 0;
@@ -2391,95 +2555,107 @@ small{
     }
 
     /*===========================================================footer======================================*/
-    iframe{
+    iframe {
         width: 315px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         left: 317px;
         font-size: 28px;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         margin-top: 2px;
         left: 319px;
     }
 
-    footer>section:nth-child(1)>section:nth-child(4){
+    footer > section:nth-child(1) > section:nth-child(4) {
         left: 317px;
     }
-    #name{
+
+    #name {
         width: 162px;
         height: 42px;
     }
-    #email{
+
+    #email {
         width: 199px;
         height: 42px;
     }
-    #subject{
+
+    #subject {
         width: 409px;
         height: 42px;
     }
-    #message{
+
+    #message {
         width: 409px;
     }
-    small{
+
+    small {
         left: 216px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 15%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 33px;
@@ -2488,35 +2664,28 @@ small{
     }
 }
 
-@media all and (min-width: 769px) and (max-width: 1025px){
-    #Home_Page_Text_Content{
+@media all and (min-width: 769px) and (max-width: 1025px) {
+    #Home_Page_Text_Content {
         top: 82px;
     }
 
-    .Home_Page_picture{
+    .Home_Page_picture {
         height: 526px;
     }
-    #downloadCvButten button{
+
+    #downloadCvButten button {
         width: 169px;
     }
 
-    #aboutMePageImage{
+    #aboutMePageImage {
         left: 0;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(1) {
         font-size: 12px;
     }
 
-    #skillPage>h2:nth-child(1){
-        position: relative;
-        top: 41px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-    #skillPage>p:nth-child(2){
+    #skillPage > h2:nth-child(1) {
         position: relative;
         top: 41px;
         left: 0;
@@ -2525,162 +2694,178 @@ small{
         text-align: center;
     }
 
-    #Skill{
+    #skillPage > p:nth-child(2) {
+        position: relative;
+        top: 41px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #Skill {
         position: unset;
         left: 0;
         top: 0;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         top: 0;
         right: 0;
         margin: auto;
         text-align: center;
     }
-    #Services{
+
+    #Services {
         position: unset;
         left: 0;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -17px;
         left: 0;
         margin: auto;
         text-align: center;
     }
-    .slidder{
+
+    .slidder {
         margin: 84px auto;
         font-size: 13px;
     }
 
-    #name{
+    #name {
         width: 200px;
         height: 45px;
     }
-    #email{
+
+    #email {
         width: 362px;
         height: 45px;
     }
-    #subject{
+
+    #subject {
         width: 607px;
         height: 45px;
     }
-    #message{
+
+    #message {
         width: 607px;
         height: 86px;
     }
 
-    iframe{
+    iframe {
         width: 355px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         left: 361px;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         left: 361px;
     }
-    footer>section:nth-child(1)>section:nth-child(4){
+
+    footer > section:nth-child(1) > section:nth-child(4) {
         left: 0;
         padding-left: 358px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 15%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 33px;
         margin: auto;
         font-size: 45%;
     }
-    small{
+
+    small {
         left: 32%;
     }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1441px){
-    #Home_Page_Text_Content{
+@media all and (min-width: 1025px) and (max-width: 1441px) {
+    #Home_Page_Text_Content {
         top: 82px;
     }
 
-    .Home_Page_picture{
+    .Home_Page_picture {
         height: 526px;
     }
-    #downloadCvButten button{
+
+    #downloadCvButten button {
         width: 169px;
     }
 
-    #aboutMePageImage{
+    #aboutMePageImage {
         left: 0;
     }
 
-    #About_Me_Section>section:nth-child(2)>div:nth-child(1){
+    #About_Me_Section > section:nth-child(2) > div:nth-child(1) {
         font-size: 12px;
     }
 
-    #skillPage>h2:nth-child(1){
-        position: relative;
-        top: 41px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-    #skillPage>p:nth-child(2){
+    #skillPage > h2:nth-child(1) {
         position: relative;
         top: 41px;
         left: 0;
@@ -2689,129 +2874,152 @@ small{
         text-align: center;
     }
 
-    #Skill{
+    #skillPage > p:nth-child(2) {
+        position: relative;
+        top: 41px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #Skill {
         position: unset;
         left: 0;
         top: 0;
     }
 
-    #Services_section>h2:nth-child(1){
+    #Services_section > h2:nth-child(1) {
         position: relative;
         top: 0;
         right: 0;
         margin: auto;
         text-align: center;
     }
-    #Services{
+
+    #Services {
         position: unset;
         left: 0;
     }
 
-    #Services_section>p:nth-child(2){
+    #Services_section > p:nth-child(2) {
         position: relative;
         top: -17px;
         left: 0;
         margin: auto;
         text-align: center;
     }
-    .slidder{
+
+    .slidder {
         margin: 84px auto;
         font-size: 13px;
     }
 
-    #name{
+    #name {
         width: 351px;
         height: 45px;
     }
-    #email{
+
+    #email {
         width: 462px;
         height: 45px;
     }
-    #subject{
+
+    #subject {
         width: 863px;
         height: 45px;
     }
-    #message{
+
+    #message {
         width: 863px;
         height: 86px;
     }
 
-    iframe{
+    iframe {
         width: 509px;
     }
 
-    footer>section:nth-child(1)>h3:nth-child(1){
+    footer > section:nth-child(1) > h3:nth-child(1) {
         left: 516px;
     }
-    footer>section:nth-child(1)>h3:nth-child(2){
+
+    footer > section:nth-child(1) > h3:nth-child(2) {
         left: 516px;
     }
-    footer>section:nth-child(1)>section:nth-child(4){
+
+    footer > section:nth-child(1) > section:nth-child(4) {
         left: 0;
         padding-left: 516px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(1)>p:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(1)>nav:nth-child(3) img{
+    footer > section:nth-child(2) > div:nth-child(1) > nav:nth-child(3) img {
         height: 16px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-size: 13px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(2)>ul:nth-child(2) li{
+    footer > section:nth-child(2) > div:nth-child(2) > ul:nth-child(2) li {
         padding-left: 0;
         font-size: 8px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>h4:nth-child(1){
+    footer > section:nth-child(2) > div:nth-child(3) > h4:nth-child(1) {
         font-size: 13px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0;
-        height:19px;
+        height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(3){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
         padding-left: 15%;
         width: 70%;
         right: 0;
         font-size: 61%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(4) {
         left: 0;
         position: relative;
         top: 0;
         height: 19px;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(5){
+
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(5) {
         position: relative;
         top: -18px;
         left: 28px;
         margin: auto;
         font-size: 66%;
     }
-    footer>section:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+
+    footer > section:nth-child(2) > div:nth-child(3) > img:nth-child(6) {
         left: 0;
         position: relative;
         top: 0;
         height: 18px;
     }
 
-    footer>section:nth-child(2)>div:nth-child(3)>p:nth-child(7){
+    footer > section:nth-child(2) > div:nth-child(3) > p:nth-child(7) {
         position: relative;
         top: -19px;
         left: 33px;
         margin: auto;
         font-size: 45%;
     }
-    small{
+
+    small {
         left: 36%;
     }
 }
