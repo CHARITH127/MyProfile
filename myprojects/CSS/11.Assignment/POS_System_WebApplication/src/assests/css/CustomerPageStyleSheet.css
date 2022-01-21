@@ -1,0 +1,42 @@
+body{
+    background-color: silver;
+}
+hr{
+    margin-top: 0;
+}
+.topic{
+    width: 100%;
+}
+.customerSearch{
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.85); ;
+}
+
+.topic>p:nth-child(2){
+    display: inline;
+}
+.searchButton{
+    margin-right: 2px;
+}
+.searchBox{
+    width: 46%;
+}
+.deleteButtonRow{
+    margin-top: 10px;
+}
+.CustomerTable{
+    margin-top: 21px;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+.searchTextFeild{
+    margin-top: 12px;
+}
+
+.topic{
+    margin-top: 14px;
+    font-size: 31px;
+}

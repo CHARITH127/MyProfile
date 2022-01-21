@@ -230,7 +230,6 @@ header > aside > ul > li {
 }
 
 #Home_Page_Text_Content blockquote {
-    font-family: "Public Sans";
     color: white;
     width: 36vw;
     font-size: 2em;
@@ -239,7 +238,6 @@ header > aside > ul > li {
 }
 
 #Home_Page_Text_Content cite {
-    font-family: "Public Sans";
     color: white;
     font-size: 2em;
     font-style: normal;
@@ -337,12 +335,10 @@ header > aside > ul > li {
     color: #1e90ff;
     font-size: 3em;
     font-style: normal;
-    font-family: 'PT Serif', serif;
 }
 
 /*description of about me page*/
 #About_Me_Section section > div:nth-child(1) p {
-    font-family: 'PT Serif', serif;
     font-size: 1.4em;
 }
 
@@ -436,7 +432,7 @@ header > aside > ul > li {
 .skill {
     width: 500px;
     margin: 60px auto;
-    color: black;
+    color: #1e90ff;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     list-style: none;
@@ -450,7 +446,6 @@ header > aside > ul > li {
 }
 
 .bar {
-    background: #9d9df6;
     display: block;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -467,7 +462,8 @@ header > aside > ul > li {
 .bar span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgb(107, 135, 220) 0%, rgb(12, 34, 255) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 31%, rgba(0, 212, 255, 1) 100%);
 
 }
 

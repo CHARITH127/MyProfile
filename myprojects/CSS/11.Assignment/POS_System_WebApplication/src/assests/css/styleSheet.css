@@ -1,0 +1,57 @@
+body{
+    background-color: silver;
+}
+hr{
+    margin-top: 26px;
+}
+
+section{
+    height: 100%;
+    background-color: white;
+}
+
+#orderInvoice{
+    margin-top: 12px;
+    position: relative;
+}
+
+#CartTable{
+    margin-top: 20px;
+}
+
+#cashRow{
+    margin-top: 10px;
+}
+.PurchaseButton{
+    margin-top: 10px;
+}
+.cartTable{
+    margin-top: 66px;
+    background-color: rgba(110, 215, 234, 0.69);
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+#total
+{
+    font-size: 33px;
+}
+
+#totalnumber{
+    font-size: 33px;
+    color: blue;
+}
+
+#subTotal
+{
+    font-size: 29px;
+}
+
+#subTotalNumber{
+    font-size: 33px;
+    color: blue;
+}

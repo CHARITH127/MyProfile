@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <link rel="stylesheet" href="src/assests/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/assests/css/styleSheet.css">
+    <meta name="viewport" content="width=device-width initial scale=1">
+</head>
+<body>
+<!--===============================nav bar==================================================-->
+
+<nav class="navbar navbar-expand-lg  shadow navbar-light bg-light">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
+                <img src="src/assests/images/supermarketLogo.jpg" alt="" width="30" height="24">
+            </a>
+            Wish POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webPage/ItemIndex.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webPage/CustomerIndex.html">Customers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Version</a></li>
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--===============================main content==============================================-->
+<main id="orderInvoice" class="container">
+    <!---->
+    <div class="container">
+        <div class="row gap-5">
+
+            <!--Customer Details-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 bg-light shadow">
+                <div class="row bg-info">
+                    <p>
+                        Invoice Details
+                    </p>
+                </div>
+                <!--first row-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="OrderID" class="form-label">Order ID:</label>
+                                <input type="text" class="form-control" id="OrderID" placeholder="Order ID">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="OrderDate" class="form-label">Order Date</label>
+                                <input type="date" class="form-control date-picker" id="OrderDate" placeholder="Example input placeholder">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--second row-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label  class="form-label">Customer:</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>None</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">Customer ID:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Customer ID">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--third row-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="CustomerName" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="CustomerName" placeholder="Customer ID">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="CustomerSalary" class="form-label">Salary:</label>
+                                <input type="text" class="form-control" id="CustomerSalary" placeholder="Customer Salary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fourth row-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="CustomerAddress" class="form-label">Addres:</label>
+                                    <input type="text" class="form-control" id="CustomerAddress" placeholder="Customer Address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item Select-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-4 bg-light shadow">
+                <div class="row bg-info">
+                    <p>
+                       Item Select
+                    </p>
+                </div>
+                <div class="container">
+                    <!--first row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label  class="form-label">Item:</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>None</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">Item Code:</label>
+                                <input type="text" class="form-control" id="ItemCode" placeholder="ItemCode">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Second Row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">Item Name:</label>
+                                <input type="text" class="form-control" id="ItemName" placeholder="ItemName">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="CustomerSalary" class="form-label">Item Price:</label>
+                                <input type="text" class="form-control" id="ItemPrice" placeholder="Item Price">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="QtyOnHand" class="form-label">QtyOnH:</label>
+                                <input type="text" class="form-control" id="QtyOnHand" placeholder="Qty On Hand">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--third Row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">Orders Quantity:</label>
+                                <input type="text" class="form-control" id="OrderQuantity" placeholder="Order Quantity">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--fourth Row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="float-end">
+                                <button type="button" class="btn btn-primary">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--pricing form-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 col-xxl-3 bg-light shadow">
+                <div class="container">
+                    <!--first row-->
+                    <div class="row">
+                        <div class="col">
+                            <label id="total" class="form-label">Total :</label>
+                            <label id="totalnumber" class="form-label">1540/=</label>
+                        </div>
+                    </div>
+                    <!--second row-->
+                    <div class="row">
+                        <div class="col">
+                            <label id="subTotal" class="form-label">Sub Total :</label>
+                            <label id="subTotalNumber" class="form-label">1440/=</label>
+                        </div>
+                    </div>
+                    <!--third row-->
+                    <div id="cashRow" class="row">
+                        <div class="col">
+                            <label class="form-label">Cash :</label>
+                            <input type="text" class="form-control" id="cash" placeholder="Cash">
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Discount :</label>
+                            <input type="text" class="form-control" id="Discount" placeholder="Discount">
+                        </div>
+
+                    </div>
+                    <!--fourth row-->
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Balance :</label>
+                            <input type="text" class="form-control" id="Balance" placeholder="Balance">
+                        </div>
+                    </div>
+                    <!--fiveth row-->
+                    <div class="PurchaseButton row">
+                        <div class="col">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--cart table-->
+    <table class="cartTable table">
+        <thead>
+        <tr>
+            <th scope="col">RowNumber</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>P001</td>
+            <td>Keerisamba 5kg</td>
+            <td>525.00</td>
+            <td>2</td>
+            <td>1050</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<!--===============================page footer==============================================-->
+<div class="footer footer-copyright text-center py-3">© 2022 Copyright|
+    This site developed By|<a href="">W.C.Wishvajith</a>
+</div>
+
+<script src="src/assests/css/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

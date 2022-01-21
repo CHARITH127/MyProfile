@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <link rel="stylesheet" href="../src/assests/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/assests/css/itemStyleSheet.css">
+    <meta name="viewport" content="width=device-width initial scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../src/assests/fonts/css/all.css">
+
+</head>
+<body>
+<!--===============================nav bar==================================================-->
+
+<nav class="navbar navbar-expand-lg  shadow navbar-light bg-light">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
+                <img src="../src/assests/images/supermarketLogo.jpg" alt="" width="30" height="24">
+            </a>
+            Wish POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ItemIndex.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CustomerIndex.html">Customers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Version</a></li>
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--===============================main content==============================================-->
+
+<!--topic-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <section class="topic bg-light">
+                    <i class="fas fa-boxes"></i>
+                    <p>Items</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--navigation path-->
+<div class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Item</li>
+        </ol>
+    </nav>
+    <hr>
+</div>
+
+<main class="Customer container">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <!--Item search-->
+                <div class="customerSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
+                    <div class="row bg-info">
+                        <p>
+                            Item Search
+                        </p>
+                    </div>
+                    <!--first row-->
+                    <div class="itemSearchTextField container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="CustomerSearch"
+                                           placeholder="Input ItemName/Code Here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second row-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="searchButton float-start">
+                                    <button type="button" class="btn btn-primary">Add Item</button>
+                                </div>
+                                <select class="searchBox form-select" aria-label="Default select example">
+                                    <option selected>None</option>
+                                    <option value="1">Name</option>
+                                    <option value="2">Code</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Item Operation buttons-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5">
+                    <!--first row-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="searchButton float-end">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#updateItemModal">
+                                        Update Item
+                                    </button>
+                                </div>
+                                <div class="searchButton float-end">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#newItemModal">
+                                        Add New Item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--New Item Button bar-->
+            <div class="deleteButtonRow container">
+                <div class="row">
+                    <div class="container">
+                        <div class="col">
+                            <div class="searchButton float-start">
+                                <button type="button" class="btn btn-primary">Delete</button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button type="button" class="btn btn-primary">Details</button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button type="button" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--All customer Details-->
+    <table class="CustomerTable table bg-info">
+        <thead>
+        <tr>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>I001</td>
+            <td>Keerisamba 5kg</td>
+            <td>2</td>
+            <td>525.00</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--Add new Item Modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="newItemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <!--first row customerId-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="ItemCode" class="form-label">Item Code:</label>
+                                    <input type="text" class="form-control" id="ItemCode" placeholder="Item Code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Second Row customer name-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="ItemName" class="form-label">Item Name:</label>
+                                    <input type="text" class="form-control" id="ItemName" placeholder="Item Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--third Row-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="ItemQuantity" class="form-label">Item Quantity:</label>
+                                    <input type="text" class="form-control" id="ItemQuantity"
+                                           placeholder="Item Quantity">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--fourth Row customer salary-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="ItemPrice" class="form-label">Item Price:</label>
+                                    <input type="text" class="form-control" id="ItemPrice" placeholder="Item Price">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Update Item modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="updateItemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateCustomer">Update Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <!--first row customerId-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="searchItemCode" class="form-label">Item Code:</label>
+                                    <input type="text" class="form-control" id="searchItemCode" placeholder="Item Code">
+                                </div>
+                                <div class="searchButton float-end">
+                                    <button type="button" class="btn btn-primary">search</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Second Row customer name-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="searchItemName" class="form-label">Item Name:</label>
+                                    <input type="text" class="form-control" id="searchItemName" placeholder="Item Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--third Row-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="searchItemQuantity" class="form-label">Item Quantity:</label>
+                                    <input type="text" class="form-control" id="searchItemQuantity"
+                                           placeholder="Item Quantity">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--fourth Row customer salary-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="searchItemPrice" class="form-label">Item Price:</label>
+                                    <input type="text" class="form-control" id="searchItemPrice"
+                                           placeholder="Item Price">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Update changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!--===============================page footer==============================================-->
+<div class="footer footer-copyright text-center py-3">© 2022 Copyright|
+    This site developed By|<a href="">W.C.Wishvajith</a>
+</div>
+
+<script src="../src/assests/css/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
