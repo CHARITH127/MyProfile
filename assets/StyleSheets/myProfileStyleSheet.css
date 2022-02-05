@@ -586,7 +586,7 @@ header > aside > ul > li {
 }
 
 /*Services that i provided*/
-#Services_section p {
+#Services_section>p:nth-child(2) {
     position: absolute;
     left: 45vw;
     top: 50px;
@@ -605,9 +605,10 @@ header > aside > ul > li {
     height: 400px;
     margin: 0 15px;
     transition: 0.7s;
-    color: white;
-    background: linear-gradient(277deg, rgba(0, 42, 241, 0.6), rgb(3, 87, 255));
+    background: rgb(0,0,0);
+    background: linear-gradient(27deg, rgba(0,0,0,1) 0%, rgba(0,6,255,1) 20%, rgb(111, 255, 229) 84%);
     border-radius: 0px 60px 0px 26px;
+    color: white;
 
 }
 
@@ -616,19 +617,21 @@ header > aside > ul > li {
     transform: scale(1.29);
     z-index: 3;
 }
-
-#UI\/UX_Development > img:nth-child(1) {
-    height: 241px;
+.image{
+    width: fit-content;
+    margin: auto;
+    margin-top: 26px;
 }
-
-#Web_Development > img:nth-child(1) {
-    height: 207px;
+.image>img{
+    height: 134px;
 }
-
-#Mobile_Development > img:nth-child(1) {
-    height: 192px;
+.serviceHeading{
+    text-align: center;
 }
-
+.serviceDescription{
+    margin: 30px;
+    text-align: center;
+}
 /*===================================================Projects Page ===================================================*/
 #Projects_Section {
     position: relative;
