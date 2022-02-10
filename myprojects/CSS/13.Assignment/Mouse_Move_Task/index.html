@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Move Task</title>
+    <link rel="stylesheet" href="src/asessts/css/normalize.css">
+    <link rel="stylesheet" href="src/asessts/css/pageStyleSheet.css">
+</head>
+<body>
+<div class="screen">
+    <h1>Hello js</h1>
+</div>
+<script src="src/asessts/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    $(".screen").mousemove(function (event) {
+        $("h1").css({top: event.pageY, left: event.pageX, position: 'absolute'})
+    });
+</script>
+</body>
+</html>
