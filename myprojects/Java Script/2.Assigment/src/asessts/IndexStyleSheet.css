@@ -1,0 +1,22 @@
+.main{
+    width: 80%;
+    height: 400px;
+}
+.colomn{
+    border: 2px solid black;
+    height: 63px;
+}
+
+#first{
+    background-color: white;
+}
+#second{
+    background-color: white;
+}
+#third{
+    background-color: white;
+}
+
+#fourth{
+    background-color: white;
+}
