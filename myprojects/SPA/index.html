@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>POS System</title>
-    <link rel="stylesheet" href="src/assests/css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/assests/css/styleSheet.css">
+    <link rel="stylesheet" href="assests/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/styleSheet.css">
     <meta name="viewport" content="width=device-width initial scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="src/assests/fonts/css/all.css">
+    <link rel="stylesheet" href="assests/fonts/css/all.css">
 </head>
 <body>
 <!--===============================nav bar==================================================-->
@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <a class="navbar-brand" href="#">
-                <img class="logoImage" src="src/assests/images/supermarketLogo.jpg" alt="" width="30" height="24">
+                <img class="logoImage" src="assests/images/supermarketLogo.jpg" alt="" width="30" height="24">
             </a>
             Wish POS System</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -63,7 +63,7 @@
         <div class="row gap-5">
 
             <!--Customer Details-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 bg-light shadow">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-4 bg-light shadow">
                 <div class="row bg-info">
                     <p>
                         Invoice Details
@@ -81,11 +81,7 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="OrderDate" class="form-label">Order Date</label>
-                                <input type="date" class="form-control date-picker" id="OrderDate"
-                                       placeholder="Example input placeholder">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-th"></span>
-                                </div>
+                                <input type="text" class="form-control " id="OrderDate">
                             </div>
                         </div>
                     </div>
@@ -107,7 +103,7 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label class="form-label">Customer ID:</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput4"
+                                <input type="text" class="form-control" id="OrderCustomerId"
                                        placeholder="Customer ID">
                             </div>
                         </div>
@@ -151,7 +147,7 @@
             </div>
 
             <!--Item Select-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-4 bg-light shadow">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4 bg-light shadow">
                 <div class="row bg-info">
                     <p>
                         Item Select
@@ -179,12 +175,22 @@
                         </div>
                     </div>
 
-                    <!--Second Row-->
+                    <!--seecond Row-->
                     <div class="row">
                         <div class="col">
                             <div class="mb-3">
                                 <label class="form-label">Item Name:</label>
-                                <input type="text" class="form-control" id="OrderItemName" placeholder="ItemName">
+                                <input type="text" class="form-control" id="OrderItemName" placeholder="Order Quantity">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--third Row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">QtyOnH:</label>
+                                <input type="text" class="form-control" id="QtyOnHand" placeholder="ItemName">
                             </div>
                         </div>
                         <div class="col">
@@ -195,18 +201,8 @@
                         </div>
                         <div class="col">
                             <div class="mb-3">
-                                <label for="QtyOnHand" class="form-label">QtyOnH:</label>
-                                <input type="text" class="form-control" id="QtyOnHand" placeholder="Qty On Hand">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--third Row-->
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label class="form-label">Orders Quantity:</label>
-                                <input type="text" class="form-control" id="OrderQuantity" placeholder="Order Quantity">
+                                <label for="QtyOnHand" class="form-label">OrderQty:</label>
+                                <input type="text" class="form-control" id="OrderQuantity" placeholder="Qty On Hand">
                             </div>
                         </div>
                     </div>
@@ -215,7 +211,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="float-end">
-                                <button type="button" class="btn btn-primary">Add Item</button>
+                                <button id="addToCart" type="button" class="btn btn-primary">Add item to cart</button>
                             </div>
                         </div>
                     </div>
@@ -224,7 +220,7 @@
 
 
             <!--pricing form-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 col-xxl-3 bg-light shadow">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-6 col-xxl-3 bg-light shadow">
                 <div class="container">
                     <!--first row-->
                     <div class="row">
@@ -263,7 +259,7 @@
                     <div class="PurchaseButton row">
                         <div class="col">
                             <div class="text-center">
-                                <button type="button" class="btn btn-primary">Purchase</button>
+                                <button id="purchaseOrder" type="button" class="btn btn-primary">Purchase</button>
                             </div>
                         </div>
                     </div>
@@ -276,7 +272,6 @@
     <table class="cartTable table">
         <thead>
         <tr>
-            <th scope="col">RowNumber</th>
             <th scope="col">Item Code</th>
             <th scope="col">Item Name</th>
             <th scope="col">Price</th>
@@ -284,17 +279,111 @@
             <th scope="col">Total</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>P001</td>
-            <td>Keerisamba 5kg</td>
-            <td>525.00</td>
-            <td>2</td>
-            <td>1050</td>
-        </tr>
+        <tbody class="cartTableBody">
         </tbody>
     </table>
+</main>
+
+<!--order managment page main content-->
+<main id="orderManagement" class="orderManage container">
+    <!--topic-->
+    <div class="topic container">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <section class="topic bg-light">
+                        <i class="fas fa-boxes"></i>
+                        <p>Order Manage</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--navigation path-->
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Order Manage</li>
+            </ol>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <!--Item search-->
+                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                    <div class="row bg-info">
+                        <p>
+                            Search Order
+                        </p>
+                    </div>
+                    <!--first row-->
+                    <div class="searchTextFeild container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="searchOrder"
+                                           placeholder="Input ItemName/Code Here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second row-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="searchButton float-start">
+                                    <button id="btnsearchOrder" type="button" class="btn btn-primary">Search Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Customer id-->
+                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                    <div class="row bg-info">
+                        <p>
+                            Customer ID
+                        </p>
+                    </div>
+                    <!--first row-->
+                    <div class="searchTextFeild container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="manageOrderCustomerID"
+                                           placeholder="Input ItemName/Code Here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--order manage table -->
+                <table class="manageOrderTable table ">
+                    <thead>
+                    <tr>
+                        <!--<th scope="col">Row Number</th>-->
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="manageOrderTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!--Customer page main content-->
@@ -319,7 +408,7 @@
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Customer</li>
+                <li class="breadcrumb-item activitemPriceRegxe" aria-current="page">Customer</li>
             </ol>
         </nav>
         <hr>
@@ -329,7 +418,7 @@
         <div class="container">
             <div class="row">
                 <!--Customer search-->
-                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
+                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
                     <div class="row bg-info">
                         <p>
                             Customer Search
@@ -351,7 +440,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="searchButton float-start">
-                                    <button type="button" class="btn btn-primary">Add Item</button>
+                                    <button id="btnSearchCustomer" type="button" class="btn btn-primary">Search</button>
                                 </div>
                                 <select class="searchBox form-select" aria-label="Default select example">
                                     <option selected>None</option>
@@ -366,148 +455,8 @@
                 </div>
 
                 <!--Customer Operation buttons-->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
                     <!--first row-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#updateCustomerModal">
-                                        Update Customer
-                                    </button>
-                                </div>
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#newCustomerModal">
-                                        Add New Customer
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--New Customer Button bar-->
-            <div class="deleteButtonRow container">
-                <div class="row">
-                    <div class="container">
-                        <div class="col">
-                            <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary bg-danger">Delete</button>
-                            </div>
-                            <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary">Details</button>
-                            </div>
-                            <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary">Clear</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--All customer Details-->
-    <table class="CustomerTable table bg-info">
-        <thead>
-        <tr>
-            <th scope="col">RowNumber</th>
-            <th scope="col">Item Code</th>
-            <th scope="col">Item Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Total</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>P001</td>
-            <td>Keerisamba 5kg</td>
-            <td>525.00</td>
-            <td>2</td>
-            <td>1050</td>
-        </tr>
-        </tbody>
-    </table>
-
-    <!--Add new Customer Modal-->
-    <!-- Modal -->
-    <div class="modal fade" id="newCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add New Customer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <!--first row customerId-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="CustomerID" class="form-label">Customer ID:</label>
-                                    <input type="text" class="form-control" id="CustomerID" placeholder="Cutomer ID">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Second Row customer name-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="CustomerName" class="form-label">Customer Name:</label>
-                                    <input type="text" class="form-control" id="CustomerName"
-                                           placeholder="CustomerName">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--third Row-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="CustomerAddress" class="form-label">Customer Address:</label>
-                                    <input type="text" class="form-control" id="CustomerAddress"
-                                           placeholder="Customer Address">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--fourth Row customer salary-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="CustomerSalary" class="form-label">Customer Salary:</label>
-                                    <input type="text" class="form-control" id="CustomerSalary"
-                                           placeholder="Customer Salary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Update customer modal-->
-    <!-- Modal -->
-    <div class="modal fade" id="updateCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="updateCustomer">Update Customer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
                     <div class="container">
                         <!--first row customerId-->
                         <div class="row">
@@ -516,9 +465,6 @@
                                     <label for="CustomerID" class="form-label">Customer ID:</label>
                                     <input type="text" class="form-control" id="searchCustomerID"
                                            placeholder="Cutomer ID">
-                                </div>
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary">search</button>
                                 </div>
                             </div>
                         </div>
@@ -557,13 +503,116 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Update changes</button>
+            </div>
+
+            <!--New Customer Button bar-->
+            <div class="deleteButtonRow container">
+                <div class="row">
+                    <div class="container">
+                        <div class="col">
+                            <div class="searchButton float-start">
+                                <button id="saveNewCustmer" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#newCustomerModal"> Save new Customer
+                                </button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button id="updateCustomer" type="button" class="btn btn-primary">Update</button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button id="clearAllCustomer" type="button" class="btn btn-primary">Clear All</button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button id="deleteCustomer" type="button" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--All customer Details-->
+    <table class="CustomerTable table ">
+        <thead>
+        <tr>
+            <!--<th scope="col">RowNumber</th>-->
+            <th scope="col">Customer ID</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Customer Address</th>
+            <th scope="col">Customer Salary</th>
+        </tr>
+        </thead>
+        <tbody class="customerTableBody">
+        </tbody>
+    </table>
+
+    <!--Add new Customer Modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="newCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <!--first row customerId-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CustomerID" class="form-label">Customer ID:</label>
+                                    <input type="text" class="form-control" id="CustomerID" placeholder="Cutomer ID">
+                                    <p><small class="text-danger pl-1" id="lblcustomerID"></small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Second Row customer name-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CustomerName" class="form-label">Customer Name:</label>
+                                    <input type="text" class="form-control" id="CustomerName"
+                                           placeholder="CustomerName">
+                                    <p><small class="text-danger pl-1" id="lblcustomerName"></small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--third Row-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CustomerAddress" class="form-label">Customer Address:</label>
+                                    <input type="text" class="form-control" id="CustomerAddress"
+                                           placeholder="Customer Address">
+                                    <p><small class="text-danger pl-1" id="lblcustomerAddress"></small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--fourth Row customer salary-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CustomerSalary" class="form-label">Customer Salary:</label>
+                                    <input type="text" class="form-control" id="CustomerSalary"
+                                           placeholder="Customer Salary">
+                                    <p><small class="text-danger pl-1" id="lblcustomerSalary"></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btn_AddCustomer" type="button" class="btn btn-primary">Add Customer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <!--Item page main content-->
@@ -597,7 +646,7 @@
         <div class="container">
             <div class="row">
                 <!--Item search-->
-                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
+                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
                     <div class="row bg-info">
                         <p>
                             Item Search
@@ -619,7 +668,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="searchButton float-start">
-                                    <button type="button" class="btn btn-primary">Add Item</button>
+                                    <button id="searchButten" type="button" class="btn btn-primary">Filter Mode</button>
                                 </div>
                                 <select class="searchBox form-select" aria-label="Default select example">
                                     <option selected>None</option>
@@ -632,24 +681,46 @@
 
                 </div>
 
-                <!--Item Operation buttons-->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5">
+                <!--Item Update Text Fields-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
                     <!--first row-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#updateItemModal">
-                                        Update Item
-                                    </button>
-                                </div>
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#newItemModal">
-                                        Add New Item
-                                    </button>
-                                </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="searchItemCode" class="form-label">Item Code:</label>
+                                <input type="text" class="form-control" id="searchItemCode" placeholder="Item Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--second row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="searchItemName" class="form-label">Item Name:</label>
+                                <input type="text" class="form-control" id="searchItemName" placeholder="Item Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--third row-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="searchItemQuantity" class="form-label">Item Quantity:</label>
+                                <input type="text" class="form-control" id="searchItemQuantity"
+                                       placeholder="Item Quantity">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--fourth Row item price-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="searchItemPrice" class="form-label">Item Price:</label>
+                                <input type="text" class="form-control" id="searchItemPrice"
+                                       placeholder="Item Price">
                             </div>
                         </div>
                     </div>
@@ -662,13 +733,18 @@
                     <div class="container">
                         <div class="col">
                             <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary">Delete</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#newItemModal"> Save new Item
+                                </button>
                             </div>
                             <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary">Details</button>
+                                <button id="update" type="button" class="btn btn-primary">Update</button>
                             </div>
                             <div class="searchButton float-start">
-                                <button type="button" class="btn btn-primary">Clear</button>
+                                <button id="clearAll" type="button" class="btn btn-primary">Clear All</button>
+                            </div>
+                            <div class="searchButton float-start">
+                                <button id="deleteItem" type="button" class="btn btn-danger">Delete Item</button>
                             </div>
                         </div>
                     </div>
@@ -677,24 +753,18 @@
         </div>
     </div>
 
-    <!--All customer Details-->
-    <table class="CustomerTable table bg-info">
+    <!-- Item Table-->
+    <table class="itemTable table ">
         <thead>
         <tr>
+            <!--<th scope="col">Row Number</th>-->
             <th scope="col">Item Code</th>
             <th scope="col">Item Name</th>
             <th scope="col">Quantity</th>
             <th scope="col">price</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>I001</td>
-            <td>Keerisamba 5kg</td>
-            <td>2</td>
-            <td>525.00</td>
-        </tr>
+        <tbody class="itemTableBody">
         </tbody>
     </table>
 
@@ -709,22 +779,24 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <!--first row customerId-->
+                        <!--first row itemCode-->
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="ItemCode" class="form-label">Item Code:</label>
                                     <input type="text" class="form-control" id="ItemCode" placeholder="Item Code">
+                                    <p><small class="text-danger  pl-1" id="lbleItemCode"></small></p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Second Row customer name-->
+                        <!--Second Row item name-->
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="ItemName" class="form-label">Item Name:</label>
                                     <input type="text" class="form-control" id="ItemName" placeholder="Item Name">
+                                    <p><small class="text-danger  pl-1" id="lbleItemName"></small></p>
                                 </div>
                             </div>
                         </div>
@@ -736,16 +808,18 @@
                                     <label for="ItemQuantity" class="form-label">Item Quantity:</label>
                                     <input type="text" class="form-control" id="ItemQuantity"
                                            placeholder="Item Quantity">
+                                    <p><small class="text-danger  pl-1" id="lbleItemQuantity"></small></p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--fourth Row customer salary-->
+                        <!--fourth Row item price-->
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="ItemPrice" class="form-label">Item Price:</label>
                                     <input type="text" class="form-control" id="ItemPrice" placeholder="Item Price">
+                                    <p><small class="text-danger  pl-1" id="lbleItemPrice"></small></p>
                                 </div>
                             </div>
                         </div>
@@ -753,76 +827,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button id="btn_AddNewItem" type="button" class="btn btn-primary">Add Item</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Update Item modal-->
-    <!-- Modal -->
-    <div class="modal fade" id="updateItemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="updateItem">Update Item</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <!--first row customerId-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="searchItemCode" class="form-label">Item Code:</label>
-                                    <input type="text" class="form-control" id="searchItemCode" placeholder="Item Code">
-                                </div>
-                                <div class="searchButton float-end">
-                                    <button type="button" class="btn btn-primary">search</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Second Row customer name-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="searchItemName" class="form-label">Item Name:</label>
-                                    <input type="text" class="form-control" id="searchItemName" placeholder="Item Name">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--third Row-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="searchItemQuantity" class="form-label">Item Quantity:</label>
-                                    <input type="text" class="form-control" id="searchItemQuantity"
-                                           placeholder="Item Quantity">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--fourth Row customer salary-->
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="searchItemPrice" class="form-label">Item Price:</label>
-                                    <input type="text" class="form-control" id="searchItemPrice"
-                                           placeholder="Item Price">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Update changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 
 <!--===============================page footer==============================================-->
@@ -830,9 +840,18 @@
     This site developed By|<a href="">W.C.Wishvajith</a>
 </div>
 
-<script src="src/assests/css/js/bootstrap.bundle.min.js"
+<script src="assests/css/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<script src="src/assests/js/indexJs.js"></script>
+<script src="assests/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assests/js/indexJs.js"></script>
+<script src="DB/DB.js"></script>
+<script src="Controller/CustomerController.js"></script>
+<script src="Controller/ItemController.js"></script>
+<script src="Controller/OrderController.js"></script>
+<script src="model/cartTm.js"></script>
+<script src="model/Orders.js"></script>
+<script src="model/orderDetails.js"></script>
+<script src="Controller/orderManageController.js"></script>
 </body>
 </html>
