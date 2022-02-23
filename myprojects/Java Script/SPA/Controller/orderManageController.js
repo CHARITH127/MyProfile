@@ -12,6 +12,7 @@ $("#btnsearchOrder").click(function () {
 function searchOrder(code) {
     for (let i = 0; i < OrderDB.length; i++) {
         if (OrderDB[i].getOrderID() == code) {
+            $("#manageOrderCustomerID").val(OrderDB[i].getCustomerId());
             return OrderDB[i];
         }
     }
@@ -25,4 +26,5 @@ function loadOrderDetails(code) {
         var tableRow = `<tr><td>${od.getItemCodeOD()}</td><td>${od.getItemNameOD()}</td><td>${od.getItemPriceOD()}</td><td>${od.getItemQtyOD()}</td><td>${od.getItemTotalOD()}</td></tr>`;
         $(".manageOrderTable").append(tableRow);
     }
+
 }

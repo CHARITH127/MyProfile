@@ -4,7 +4,7 @@
 function loadAllCustomer() {
     $(".customerTableBody").empty();
     for (var i of CustomerDB) {
-        var tableRow = `<tr><td>${i.cId}</td><td>${i.cName}</td><td>${i.cAddress}</td><td>${i.cSalary}</td></tr>`;
+        var tableRow = `<tr><td>${i.getCustomerID()}</td><td>${i.getCustomerName()}</td><td>${i.getCustomerAddress()}</td><td>${i.getCustomerSalary()}</td></tr>`;
         $(".customerTableBody").append(tableRow);
     }
 }
@@ -17,12 +17,14 @@ function saveCustomer() {
     var customerSalary = $("#CustomerSalary").val();
 
     /*create Object*/
-    var customerObject = {
+    var customerObject= new Customer(customerID,customerName,customerAddress,customerSalary);
+
+    /*var customerObject = {
         cId: customerID,
         cName: customerName,
         cAddress: customerAddress,
         cSalary: customerSalary
-    };
+    };*/
 
     CustomerDB.push(customerObject);
 }
@@ -30,7 +32,7 @@ function saveCustomer() {
 /*search customer*/
 function searchCustomer(id) {
     for (let i = 0; i < CustomerDB.length; i++) {
-        if (CustomerDB[i].cId == id) {
+        if (CustomerDB[i].getCustomerID() == id) {
             return CustomerDB[i];
         }
     }
@@ -39,7 +41,7 @@ function searchCustomer(id) {
 /*delete customer*/
 function deleteCustomer(id){
     for (let i = 0; i < CustomerDB.length; i++) {
-        if (CustomerDB[i].cId == id) {
+        if (CustomerDB[i].getCustomerID() == id) {
             CustomerDB.splice(i,1);
         }
     }
@@ -56,10 +58,10 @@ function updateCustomer(){
 
     var indexOfObject = CustomerDB.indexOf(searchCustomer(code));
 
-    CustomerDB[indexOfObject].cId = newCId;
-    CustomerDB[indexOfObject].cName = newCName;
-    CustomerDB[indexOfObject].cAddress = newCAddress;
-    CustomerDB[indexOfObject].cSalary = newCSalary;
+    CustomerDB[indexOfObject].setCustomerID(newCId);
+    CustomerDB[indexOfObject].setCustomerName(newCName);
+    CustomerDB[indexOfObject].setCustomerAddress(newCAddress);
+    CustomerDB[indexOfObject].setCustomerSalary(newCSalary);
 
     loadAllCustomer();
 }

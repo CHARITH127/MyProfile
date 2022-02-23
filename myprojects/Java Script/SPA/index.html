@@ -314,58 +314,59 @@
     <div class="container">
         <div class="container">
             <div class="row">
-                <!--Item search-->
-                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
-                    <div class="row bg-info">
-                        <p>
-                            Search Order
-                        </p>
-                    </div>
-                    <!--first row-->
-                    <div class="searchTextFeild container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="searchOrder"
-                                           placeholder="Input ItemName/Code Here">
+                <div class="row">
+                    <!--Item search-->
+                    <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                        <div class="row bg-info">
+                            <p>
+                                Search Order
+                            </p>
+                        </div>
+                        <!--first row-->
+                        <div class="searchTextFeild container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="searchOrder"
+                                               placeholder="Input ItemName/Code Here">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--second row-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="searchButton float-start">
-                                    <button id="btnsearchOrder" type="button" class="btn btn-primary">Search Order
-                                    </button>
+                        <!--second row-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="searchButton float-start">
+                                        <button id="btnsearchOrder" type="button" class="btn btn-primary">Search Order
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
+                    <!--Customer id-->
+                    <div class="customerID col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                        <div class="row ">
+                            <p>
+                                Customer ID
+                            </p>
+                        </div>
+                        <!--first row-->
+                        <div class="searchTextFeild container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="manageOrderCustomerID"
+                                               placeholder="Input ItemName/Code Here">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!--Customer id-->
-                <div class="ItemSearch col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
-                    <div class="row bg-info">
-                        <p>
-                            Customer ID
-                        </p>
-                    </div>
-                    <!--first row-->
-                    <div class="searchTextFeild container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="manageOrderCustomerID"
-                                           placeholder="Input ItemName/Code Here">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!--order manage table -->
                 <table class="manageOrderTable table ">
                     <thead>
@@ -844,7 +845,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script src="assests/jQuery/jquery-3.6.0.min.js"></script>
-<script src="assests/js/indexJs.js"></script>
 <script src="DB/DB.js"></script>
 <script src="Controller/CustomerController.js"></script>
 <script src="Controller/ItemController.js"></script>
@@ -853,5 +853,9 @@
 <script src="model/Orders.js"></script>
 <script src="model/orderDetails.js"></script>
 <script src="Controller/orderManageController.js"></script>
+<script src="model/Item.js"></script>
+<script src="model/Customer.js"></script>
+<script src="assests/js/indexJs.js"></script>
+
 </body>
 </html>

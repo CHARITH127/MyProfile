@@ -34,9 +34,6 @@ $("#customer").click(function () {
 
 });
 
-/*================Order Page Event Start===========================*/
-/*================Order Page Event End===========================*/
-
 /*================Item Page Event Start===========================*/
 /*save item butten*/
 $("#btn_AddNewItem").click(function () {
@@ -50,10 +47,10 @@ $("#searchButten").click(function () {
     var searchCode = $("#ItemSearch").val();
     var response = searchItem(searchCode);
     if (response) {
-        $("#searchItemCode").val(response.iCode);
-        $("#searchItemName").val(response.iName);
-        $("#searchItemQuantity").val(response.iQuantity);
-        $("#searchItemPrice").val(response.iPrice);
+        $("#searchItemCode").val(response.getItemCodeO());
+        $("#searchItemName").val(response.getItemNameO());
+        $("#searchItemQuantity").val(response.getItemQuantityO());
+        $("#searchItemPrice").val(response.getItemPriceO());
     } else {
         alert("Not such a Item in here");
     }
@@ -84,7 +81,7 @@ $("#update").click(function () {
 
 
 
-/*================Customer Page Event Satart===========================*/
+/*================Customer Page Event Start===========================*/
 
 /* btn save Customer */
 $("#btn_AddCustomer").click(function () {
@@ -97,10 +94,10 @@ $("#btn_AddCustomer").click(function () {
 $("#btnSearchCustomer").click(function () {
     var code = $("#CustomerSearch").val();
     var resp = searchCustomer(code);
-    $("#searchCustomerID").val(resp.cId);
-    $("#searchCustomerName").val(resp.cName);
-    $("#searchCustomerAddress").val(resp.cAddress);
-    $("#searchCustomerSalary").val(resp.cSalary);
+    $("#searchCustomerID").val(resp.getCustomerID());
+    $("#searchCustomerName").val(resp.getCustomerName());
+    $("#searchCustomerAddress").val(resp.getCustomerAddress());
+    $("#searchCustomerSalary").val(resp.getCustomerSalary());
 });
 
 /* btn delete customer*/
@@ -137,3 +134,75 @@ function clearSearchCustomer(){
     $("#searchCustomerSalary").val("");
 }
 
+/*================Customer Page Event End===========================*/
+
+/*=========================== Order Page Events start=====================*/
+
+/*loading current Date */
+d = new Date();
+$("#OrderDate").val(d.toLocaleDateString());
+
+/*set order ID*/
+var orderId = setOrderId();
+$("#OrderID").val("O00 - " + orderId);
+
+/*load customer details to the order form*/
+$("#OrderCustomerId").keydown(function (e) {
+    var id = $("#OrderCustomerId").val();
+    if (e.key == "Enter") {
+        var Customer = searchCustomer(id);
+        $("#OrderCustomerName").val(Customer.getCustomerName());
+        $("#OrderCustomerAddress").val(Customer.getCustomerAddress());
+        $("#OrderCustomerSalary").val(Customer.getCustomerSalary());
+    }
+})
+
+/*load item details to the order form*/
+$("#OrderItemCode").keydown(function (e) {
+    var id = $("#OrderItemCode").val();
+    if (e.key == "Enter") {
+        var Item = searchItem(id);
+        $("#OrderItemName").val(Item.getItemCodeO());
+        $("#QtyOnHand").val(Item.getItemQuantityO());
+        $("#OrderItemPrice").val(Item.getItemPriceO());
+        $("#OrderQuantity").focus();
+    }
+})
+
+/*add items to the cart */
+$("#addToCart").click(function () {
+    var code = $("#OrderItemCode").val();
+    if (isExistItem(code) != true) {
+        addDetailsToTheCart();
+        loadAllItemDetails();
+    } else {
+        itemIsExistOnCart();
+    }
+});
+
+/*set subTotal according to the discount event*/
+$("#Discount").keydown(function (e) {
+    if (e.key == "Enter") {
+        var discount = parseInt($("#Discount").val());
+        setSubtotal(discount);
+    }
+});
+
+/*calcuate balance event */
+$("#cash").keydown(function (e) {
+    if (e.key == "Enter") {
+        var cash = parseInt($("#cash").val());
+        calculateBalance(cash);
+    }
+});
+
+/*purchase order event*/
+$("#purchaseOrder").click(function () {
+    placeOrder();
+    alert("Order is successfully placed.");
+    var orderId = setOrderId();
+    $("#OrderID").val("O00 - " + orderId);
+    clearAllOrderPage();
+});
+
+/*=========================== Order Page Events Ends=====================*/

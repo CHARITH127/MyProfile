@@ -4,7 +4,7 @@
 function loadAllItems() {
     $(".itemTableBody").empty();
     for (var i of ItemDB) {
-        var tableRow = `<tr><td>${i.iCode}</td><td>${i.iName}</td><td>${i.iQuantity}</td><td>${i.iPrice}</td></tr>`;
+        var tableRow = `<tr><td>${i.getItemCodeO()}</td><td>${i.getItemNameO()}</td><td>${i.getItemQuantityO()}</td><td>${i.getItemPriceO()}</td></tr>`;
         $(".itemTable").append(tableRow);
     }
 }
@@ -17,12 +17,15 @@ function saveItem() {
     var itemPrice = $("#ItemPrice").val();
 
     /*create Object*/
-    var itemObject = {
+
+    var itemObject = new Item(itemCode,itemName,itemQuantity,itemPrice);
+
+    /*var itemObject = {
         iCode: itemCode,
         iName: itemName,
         iQuantity: itemQuantity,
         iPrice: itemPrice
-    };
+    };*/
 
     ItemDB.push(itemObject);
 }
@@ -38,10 +41,10 @@ function updateItem() {
 
     var indexOfObject = ItemDB.indexOf(searchItem(code));
 
-    ItemDB[indexOfObject].iCode = newICode;
-    ItemDB[indexOfObject].iName = newIName;
-    ItemDB[indexOfObject].iQuantity = newIQTY;
-    ItemDB[indexOfObject].iPrice = newIPrice;
+    ItemDB[indexOfObject].setItemNameO(newICode);
+    ItemDB[indexOfObject].setItemNameO(newIName);
+    ItemDB[indexOfObject].setItemQuantityO(newIQTY);
+    ItemDB[indexOfObject].setItemPriceO(newIPrice);
 
     loadAllItems();
 
@@ -50,7 +53,7 @@ function updateItem() {
 /*delete items*/
 function deleteItems(id) {
     for (let i = 0; i < ItemDB.length; i++) {
-        if (ItemDB[i].iCode == id) {
+        if (ItemDB[i].getItemCodeO() == id) {
             ItemDB.splice(i, 1);
         }
     }
@@ -59,7 +62,7 @@ function deleteItems(id) {
 /*search Item*/
 function searchItem(id) {
     for (let i = 0; i < ItemDB.length; i++) {
-        if (ItemDB[i].iCode == id) {
+        if (ItemDB[i].getItemCodeO() == id) {
             return ItemDB[i];
         }
     }
