@@ -181,4 +181,5 @@ function clearAllOrderPage() {
     $("#Discount").val(" ");
     $("#Balance").val(" ");
     $(".cartTableBody").empty();
+    CartDB.splice(0,CartDB.length);
 }

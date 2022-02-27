@@ -162,7 +162,7 @@ $("#OrderItemCode").keydown(function (e) {
     var id = $("#OrderItemCode").val();
     if (e.key == "Enter") {
         var Item = searchItem(id);
-        $("#OrderItemName").val(Item.getItemCodeO());
+        $("#OrderItemName").val(Item.getItemNameO());
         $("#QtyOnHand").val(Item.getItemQuantityO());
         $("#OrderItemPrice").val(Item.getItemPriceO());
         $("#OrderQuantity").focus();
