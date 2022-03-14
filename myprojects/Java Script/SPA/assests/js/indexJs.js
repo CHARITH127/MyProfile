@@ -40,6 +40,7 @@ $("#btn_AddNewItem").click(function () {
     saveItem();
     loadAllItems();
     clearAllItemAdd();
+    $("#btn_AddNewItem").attr("disabled", false);
 });
 
 /*search butten*/
@@ -88,6 +89,7 @@ $("#btn_AddCustomer").click(function () {
     saveCustomer();
     loadAllCustomer();
     clearAddCustomer();
+    $("#btn_AddCustomer").attr("disabled", false);
 });
 
 /* btn search customer */
@@ -179,6 +181,11 @@ $("#addToCart").click(function () {
         itemIsExistOnCart();
     }
 });
+$("#OrderQuantity").keydown(function (e) {
+    if (e.key == "Enter") {
+        $("#addToCart").attr("disabled", false);
+    }
+})
 
 /*set subTotal according to the discount event*/
 $("#Discount").keydown(function (e) {
@@ -193,6 +200,7 @@ $("#cash").keydown(function (e) {
     if (e.key == "Enter") {
         var cash = parseInt($("#cash").val());
         calculateBalance(cash);
+        $("#purchaseOrder").attr("disabled", false);
     }
 });
 

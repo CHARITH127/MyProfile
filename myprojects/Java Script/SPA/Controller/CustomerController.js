@@ -17,14 +17,7 @@ function saveCustomer() {
     var customerSalary = $("#CustomerSalary").val();
 
     /*create Object*/
-    var customerObject= new Customer(customerID,customerName,customerAddress,customerSalary);
-
-    /*var customerObject = {
-        cId: customerID,
-        cName: customerName,
-        cAddress: customerAddress,
-        cSalary: customerSalary
-    };*/
+    var customerObject = new Customer(customerID, customerName, customerAddress, customerSalary);
 
     CustomerDB.push(customerObject);
 }
@@ -39,16 +32,16 @@ function searchCustomer(id) {
 }
 
 /*delete customer*/
-function deleteCustomer(id){
+function deleteCustomer(id) {
     for (let i = 0; i < CustomerDB.length; i++) {
         if (CustomerDB[i].getCustomerID() == id) {
-            CustomerDB.splice(i,1);
+            CustomerDB.splice(i, 1);
         }
     }
 }
 
 /*update customer*/
-function updateCustomer(){
+function updateCustomer() {
     var code = $("#CustomerSearch").val();
 
     var newCId = $("#searchCustomerID").val();
@@ -136,6 +129,7 @@ $("#CustomerSalary").keydown(function (e) {
             $("#CustomerSalary").css('box-shadow', '0 0 0 0.25rem rgb(13 110 253 / 25%)');
             $("#CustomerSalary").css('color', '#04db14');
             $("#lblcustomerSalary").text("");
+            $("#btn_AddCustomer").attr("disabled", false);
         } else {
             $("#CustomerSalary").css('border-color', '#ff0202');
             $("#CustomerSalary").css('box-shadow', '0 0 0 0.25rem rgb(13 110 253 / 25%)');

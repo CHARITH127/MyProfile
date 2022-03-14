@@ -139,6 +139,7 @@ $("#ItemPrice").keydown(function (e) {
             $("#ItemPrice").css('box-shadow', '0 0 0 0.25rem rgb(13 110 253 / 25%)');
             $("#ItemPrice").css('color', '#04db14');
             $("#lbleItemPrice").text("");
+            $("#btn_AddNewItem").attr("disabled", false);
         } else {
             $("#ItemPrice").css('border-color', '#ff0202');
             $("#ItemPrice").css('box-shadow', '0 0 0 0.25rem rgb(13 110 253 / 25%)');
